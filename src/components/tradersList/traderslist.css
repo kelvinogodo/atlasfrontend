@@ -1,0 +1,237 @@
+.TraderListSection {
+    width: 100%;
+    padding: 100px 0;
+    background: var(--slate-900);
+}
+
+.traderListSectionWrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.highlight-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-header p {
+    color: var(--slate-400);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.traderListCardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+/* Master Trader Card Premium Design */
+.master-trader-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    border: 1px solid var(--slate-800);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.master-trader-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--blue-500);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.card-header {
+    padding: 24px;
+    border-bottom: 1px solid var(--slate-800);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.trader-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--emerald-500);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.trader-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.name-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.name-row h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.verified-badge {
+    color: var(--blue-400);
+    font-size: 1rem;
+}
+
+.trader-label {
+    font-size: 0.875rem;
+    color: var(--slate-400);
+}
+
+.stats-grid {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--slate-500);
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.stat-value {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+}
+
+.stat-value.positive {
+    color: var(--emerald-400);
+}
+
+.chart-preview {
+    padding: 0 24px 24px;
+    /* Optional: can add a subtle gradient background for the chart area if desired */
+}
+
+.dummy-chart-line {
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent 0%, rgba(16, 185, 129, 0.15) 50%, transparent 100%);
+    position: relative;
+    border-bottom: 2px solid var(--emerald-500);
+    filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.4));
+}
+
+.card-actions {
+    padding: 24px;
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+    border-top: 1px solid var(--slate-800);
+}
+
+.copy-action-btn {
+    flex: 1;
+    padding: 12px;
+    background: var(--gradient-accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.copy-action-btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+.profile-link-btn {
+    flex: 1;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid var(--slate-600);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.profile-link-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: white;
+}
+
+.section-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.browse-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 32px;
+    background: transparent;
+    border: 1px solid var(--blue-500);
+    color: var(--blue-400);
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.browse-all-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--blue-300);
+    border-color: var(--blue-400);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .TraderListSection {
+        padding: 60px 0;
+    }
+
+    .traderListCardContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}

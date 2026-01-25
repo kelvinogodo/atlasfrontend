@@ -1,0 +1,60 @@
+.forex-analysis-section {
+    width: 100%;
+    padding: 100px 0;
+    background: var(--slate-900);
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.glass-panel-vertical {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--slate-800);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: transform 0.3s ease;
+}
+
+.glass-panel-vertical:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--blue-500);
+    transform: translateY(-5px);
+}
+
+.analysis-card-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.analysis-card-header p {
+    color: var(--slate-400);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.analysis-widget-wrapper {
+    height: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--slate-950);
+    border: 1px solid var(--slate-800);
+}
+
+@media (max-width: 990px) {
+    .analysis-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .glass-panel-vertical {
+        height: auto;
+    }
+}
