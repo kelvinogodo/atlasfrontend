@@ -28,9 +28,7 @@ const Forex = () => {
           </div>
           <div className='about-section copy-trade-section'>
             <div className="about-wrapper copy-trade-wrapper about-copy-trade-section forex-copy-trade-section">
-              <div className="about-page-img forex-img-container">
-                <img src="/signalsynchmockup14.png" className='forex-img ' data-aos="fade-up" alt="" />
-              </div>
+
               <div className="tesla-widget-text-container" data-aos="fade-up">
                 <h1>forex <span className="highlight">trading</span> </h1>
                 <p>Buy and sell one currency for another on the market with the highest capitalization. There are a lot of big players in Forex including central banks, companies, etc. There is also room for strategies, you can get a few pips instantly on minor price fluctuations, or you can choose a safer method.</p>

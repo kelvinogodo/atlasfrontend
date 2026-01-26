@@ -21,7 +21,7 @@ const TradingViewFinancials = () => {
         "largeChartUrl": "",
         "displayMode": "regular",
         "width": "100%",
-        "height": "75%",
+        "height": "100%",
         "colorTheme": "dark",
         "symbol": "NASDAQ:AAPL",
         "locale": "en"

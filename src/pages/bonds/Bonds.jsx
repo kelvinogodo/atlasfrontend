@@ -11,26 +11,24 @@ const Bonds = () => {
     const navigate = useNavigate()
     return (
         <>
-            <div className='bonds-page-section'>
+            <div className='forex-page-section'>
                 <Header />
-                <div className="bonds-page-wrapper">
+                <div className="forex-page-wrapper">
                     <div className="videoframe-text-container" data-aos="fade-up">
                         <h1><span className="highlight">bonds </span></h1>
                     </div>
-                    <div className="bonds-hero-section">
-                        <video src="/chart-big.hvc1.6af4110d38611a03c3a4.mp4" className="bonds-page-video" autoPlay='true' loop='true'></video>
-                        <div className="bonds-floating-widget-right" data-aos="fade-up">
+                    <div className="forex-hero-section">
+                        <video src="/chart-big.hvc1.6af4110d38611a03c3a4.mp4" className="forex-page-video" autoPlay='true' loop='true'></video>
+                        <div className="floating-widget-right" data-aos="fade-up">
                             <MiniSymbolOverviewWidget />
                         </div>
-                        <div className="bonds-floating-widget-left" data-aos="fade-up">
+                        <div className="floating-widget-left" data-aos="fade-up">
                             <TradingViewWidget />
                         </div>
                     </div>
                     <div className='about-section forex-copy-trade-section'>
                         <div className="about-wrapper copy-trade-wrapper about-copy-trade-section forex-copy-trade-section">
-                            <div className="about-page-img forex-img-container">
-                                <img src="/axoncopmockup10.png" className='forex-img ' data-aos="fade-up" alt="" />
-                            </div>
+
                             <div className="tesla-widget-text-container" data-aos="fade-up">
                                 <h1>bonds <span className="highlight">trading</span> </h1>
                                 <p>Invest in government and corporate bonds. Bonds provide a steady income stream and are considered a lower-risk investment compared to stocks. Understand yield, maturity, and credit ratings to build a stable portfolio.</p>

@@ -1,6 +1,10 @@
 .contact-section {
     padding: 100px 0;
     background: var(--slate-950);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .contact-wrapper {

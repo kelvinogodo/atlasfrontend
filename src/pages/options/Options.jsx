@@ -10,26 +10,24 @@ const Options = () => {
     const navigate = useNavigate()
     return (
         <>
-            <div className='options-page-section'>
+            <div className='forex-page-section'>
                 <Header />
-                <div className="options-page-wrapper">
+                <div className="forex-page-wrapper">
                     <div className="videoframe-text-container" data-aos="fade-up">
                         <h1><span className="highlight">options </span></h1>
                     </div>
-                    <div className="options-hero-section">
-                        <video src="/chart-big.hvc1.6af4110d38611a03c3a4.mp4" className="options-page-video" autoPlay='true' loop='true'></video>
-                        <div className="options-floating-widget-right" data-aos="fade-up">
+                    <div className="forex-hero-section">
+                        <video src="/chart-big.hvc1.6af4110d38611a03c3a4.mp4" className="forex-page-video" autoPlay='true' loop='true'></video>
+                        <div className="floating-widget-right" data-aos="fade-up">
                             <MiniSymbolOverviewWidget />
                         </div>
-                        <div className="options-floating-widget-left" data-aos="fade-up">
+                        <div className="floating-widget-left" data-aos="fade-up">
                             <TradingViewWidget />
                         </div>
                     </div>
                     <div className='about-section forex-copy-trade-section'>
                         <div className="about-wrapper copy-trade-wrapper about-copy-trade-section forex-copy-trade-section">
-                            <div className="about-page-img forex-img-container">
-                                <img src="/signalsynchmockup3.png" className='forex-img ' data-aos="fade-up" alt="" />
-                            </div>
+
                             <div className="tesla-widget-text-container" data-aos="fade-up">
                                 <h1>options <span className="highlight">trading</span> </h1>
                                 <p>Options contracts give you the right, but not the obligation, to buy or sell an underlying asset at a set price. They are versatile instruments used for hedging, income generation, and speculation on price movements.</p>
