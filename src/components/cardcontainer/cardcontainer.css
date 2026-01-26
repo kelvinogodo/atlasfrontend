@@ -72,6 +72,8 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    align-items: center;
+    justify-content: center;
 }
 
 .cardSectionCardSvgText h2 {
@@ -87,6 +89,9 @@
     height: 3px;
     background: var(--gradient-accent);
     border-radius: 2px;
+    margin: 0 auto;
+    align-self: center ;
+    /* Force centering in flex column */
 }
 
 .cardSectionCardSvgText p {

@@ -197,11 +197,15 @@
 }
 
 .section-footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .browse-all-btn {
+    width: fit-content;
     display: inline-flex;
     align-items: center;
     gap: 8px;

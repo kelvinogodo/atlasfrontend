@@ -1,0 +1,286 @@
+/* Signup.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.signup-page-container {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    /* Light text for dark theme */
+    background-color: var(--primary-color, rgb(2, 6, 23));
+    /* Dark background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Header Styles Removed - Using Global Header */
+
+
+/* Main Content */
+.signup-content {
+    padding: 40px 10%;
+    flex: 1;
+}
+
+.page-title {
+    color: var(--color-variant, rgb(37, 172, 208));
+    /* Teal Title */
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Form Styles */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-section-title {
+    color: var(--color-variant, rgb(37, 172, 208));
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Personal Information Grid */
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-input {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Dark transparent input */
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.signup-input:focus {
+    border-color: var(--color-variant, rgb(37, 172, 208));
+}
+
+.signup-input::placeholder {
+    color: #889;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #889;
+}
+
+/* Account Type Section */
+.account-type-controls {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.account-toggle {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-radius: 25px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.toggle-btn {
+    padding: 12px 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    color: #889;
+    transition: all 0.3s;
+    margin: 0;
+}
+
+.toggle-btn.active {
+    background-color: var(--color-variant, rgb(37, 172, 208));
+    color: white;
+}
+
+/* Account List & Panel */
+.account-list {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+.account-list-sidebar {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-list-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #889;
+    font-weight: 600;
+    transition: all 0.2s;
+    border-bottom: 1px solid #333;
+}
+
+.account-list-item:hover,
+.account-list-item.selected {
+    background-color: rgba(37, 172, 208, 0.1);
+    color: var(--color-variant, rgb(37, 172, 208));
+    border-left: 3px solid var(--color-variant, rgb(37, 172, 208));
+}
+
+.account-details-panel {
+    flex: 1;
+    padding: 20px;
+}
+
+.account-details-description {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.account-details-specs {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* Radio Selection */
+.radio-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.radio-label input[type="radio"] {
+    accent-color: var(--color-variant, rgb(37, 172, 208));
+    width: 18px;
+    height: 18px;
+}
+
+/* Footer Section */
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.terms-link {
+    color: var(--color-variant, rgb(37, 172, 208));
+    text-decoration: underline;
+}
+
+.submit-btn {
+    margin-top: 30px;
+    background-color: var(--color-variant, rgb(37, 172, 208));
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    filter: brightness(1.1);
+}
+
+.login-link-container {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.login-link {
+    color: var(--color-variant, rgb(37, 172, 208));
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .account-type-controls {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .account-list {
+        flex-direction: column;
+    }
+
+    .account-list-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #333;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .account-list-item {
+        white-space: nowrap;
+        border-bottom: none;
+        border-left: none;
+    }
+
+    .account-list-item.selected {
+        border-bottom: 3px solid var(--color-variant, rgb(37, 172, 208));
+        border-left: none;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
