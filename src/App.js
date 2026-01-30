@@ -59,8 +59,8 @@ function App() {
   }, [])
 
 
-  // const route = 'https://signalsynchbackend.vercel.app'
-  const route = 'http://localhost:5000'
+  const route = 'https://signalsynchbackend.vercel.app'
+  // const route = 'http://localhost:5000'
 
   return (
     <>
