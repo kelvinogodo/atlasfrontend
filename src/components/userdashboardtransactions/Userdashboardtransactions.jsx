@@ -5,6 +5,7 @@ import Userdashboardheader from '../userdashboardheader/Userdashboardheader'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import { IoMdNotifications } from "react-icons/io";
 import { FaUserAlt, FaAngleDown } from "react-icons/fa";
+import Loader from '../Loader'
 import MobileDropdown from '../MobileDropdown'
 import './userdashboardtransactions.css'
 const Userdashboardtransactions = ({ route }) => {
@@ -48,19 +49,7 @@ const Userdashboardtransactions = ({ route }) => {
       <Userdashboardheader route={route} />
       {
         loader &&
-        <div className="wifi-loader-container">
-          <div class="loader">
-            <span class="l">L</span>
-            <span class="o">o</span>
-            <span class="a">a</span>
-            <span class="d">d</span>
-            <span class="i">i</span>
-            <span class="n">n</span>
-            <span class="g">g</span>
-            <span class="d1">.</span>
-            <span class="d2">.</span>
-          </div>
-        </div>
+        <Loader />
       }
       {userData && userData.transaction.length !== 0 ?
         <section className='dashboardhomepage'>
