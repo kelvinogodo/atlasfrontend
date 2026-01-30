@@ -55,12 +55,12 @@ const Userdashboardheader = ({ route }) => {
                         <div className="dashboard-svg-container">
                             <MdAddchart />
                         </div>
-                        <Link to='/traders'>copy traders</Link></li>
+                        <Link to='/traders'>Mirror traders</Link></li>
                     <li className="dashboard-links">
                         <div className="dashboard-svg-container">
                             <FaRegChartBar />
                         </div>
-                        <Link to='/usercopytrade'>copy trading</Link></li>
+                        <Link to='/usercopytrade'>Mirror trading</Link></li>
                     <li className="dashboard-links">
                         <div className="dashboard-svg-container">
                             <GrLineChart />

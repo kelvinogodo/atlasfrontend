@@ -277,17 +277,19 @@
     }
 
     .account-list-sidebar {
-        width: 100%;
         border-right: none;
         border-bottom: 1px solid #333;
         flex-direction: row;
-        overflow-x: auto;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .account-list-item {
         white-space: nowrap;
         border-bottom: none;
         border-left: none;
+        flex: 1 0 auto;
+        text-align: center;
     }
 
     .account-list-item.selected {

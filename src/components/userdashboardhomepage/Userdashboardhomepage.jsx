@@ -11,6 +11,7 @@ import Userdashboardheader from '../userdashboardheader/Userdashboardheader'
 import { BiMoneyWithdraw } from "react-icons/bi";
 import TeslaWidget from '../TeslaWidget'
 import MobileDropdown from '../MobileDropdown';
+import AccountCredentials from '../AccountCredentials/AccountCredentials';
 
 const Userdashboardhomepage = ({ route }) => {
   const navigate = useNavigate()
@@ -129,6 +130,8 @@ const Userdashboardhomepage = ({ route }) => {
             : ''
         }
 
+        {userData && <AccountCredentials userData={userData} />}
+
         <div className="dashboard-overview-container">
           <MobileDropdown showStatus={showMobileDropdown} route={route} closeMenu={closeMobileMenu} />
           <div className="upper-overview-card">
@@ -230,12 +233,12 @@ const Userdashboardhomepage = ({ route }) => {
                 <div className="trader-card-image-container">
 
                   <img src={`${userData
-                      ? userData.funded > 20000
-                        ? '/diamond.png'
-                        : userData.funded > 5000
-                          ? '/download-removebg-preview (2).png'  // Gold image
-                          : '/images-removebg-preview.png'        // Silver image
-                      : ''
+                    ? userData.funded > 20000
+                      ? '/diamond.png'
+                      : userData.funded > 5000
+                        ? '/download-removebg-preview (2).png'  // Gold image
+                        : '/images-removebg-preview.png'        // Silver image
+                    : ''
                     }`}
                     alt=""
                     className='trader-card-image'
@@ -243,12 +246,12 @@ const Userdashboardhomepage = ({ route }) => {
                 </div>
                 <div className="trader-card-text-container">
                   <h3 className="trader-name">{`${userData
-                      ? userData.funded > 20000
-                        ? 'Diamond'
-                        : userData.funded > 5000
-                          ? 'gold'  // Gold 
-                          : 'silver'        // Silver 
-                      : ''
+                    ? userData.funded > 20000
+                      ? 'Diamond'
+                      : userData.funded > 5000
+                        ? 'gold'  // Gold 
+                        : 'silver'        // Silver 
+                    : ''
                     }`} </h3>
                   <p className="trader-description">Rank</p>
                 </div>
@@ -258,23 +261,23 @@ const Userdashboardhomepage = ({ route }) => {
                   <div className="trader-performance-item">
                     <p className="performance-label">capital Range</p>
                     <p className="performance-value my-value">{`${userData
-                        ? userData.funded > 20000
-                          ? '$20,001 - unlimited' //diamond
-                          : userData.funded > 5000
-                            ? '$5001- $20,000'  // Gold 
-                            : '$0- $5,000'        // Silver 
-                        : ''
+                      ? userData.funded > 20000
+                        ? '$20,001 - unlimited' //diamond
+                        : userData.funded > 5000
+                          ? '$5001- $20,000'  // Gold 
+                          : '$0- $5,000'        // Silver 
+                      : ''
                       }`}</p>
                   </div>
                   <div className="trader-performance-item">
                     <p className="performance-label">bonus</p>
                     <p className="performance-value my-value">{`${userData
-                        ? userData.funded > 20000
-                          ? '$500' //diamond
-                          : userData.funded > 5000
-                            ? '$100'  // Gold 
-                            : '$50'   // Silver 
-                        : ''
+                      ? userData.funded > 20000
+                        ? '$500' //diamond
+                        : userData.funded > 5000
+                          ? '$100'  // Gold 
+                          : '$50'   // Silver 
+                      : ''
                       }`}</p>
                   </div>
                 </div>
