@@ -371,6 +371,10 @@
     align-items: center;
   }
 
+  .hero-abstract-visuals {
+    display: none;
+  }
+
   .divider-dot {
     display: none;
   }
