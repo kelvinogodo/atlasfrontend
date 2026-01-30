@@ -281,7 +281,7 @@ const UserdashboardTraders = ({ route }) => {
                       </div>
                     </div>
                     <div className="trader-performance-btn-container">
-                      <button className='trader-card-btn' onClick={() => openCopyModal(activeTrader)}>copy trade</button>
+                      <button className='trader-card-btn' onClick={() => openCopyModal(activeTrader)}>mirror trade</button>
                     </div>
                   </div>
                 </div>
@@ -316,7 +316,7 @@ const UserdashboardTraders = ({ route }) => {
                           <h3 className="trader-name">{trader.firstname}</h3>
                           <p className="trader-description">Allocated: ${sub.allocatedAmount}</p>
                           <p className="trader-description">Equity: ${sub.currentEquity.toFixed(2)}</p>
-                          <button onClick={() => stopcopyTrade(trader)}>stop copying</button>
+                          <button onClick={() => stopcopyTrade(trader)}>stop mirroring</button>
                         </div>
                       </div>
                       <div className="trader-perfomance-container">
@@ -398,7 +398,7 @@ const UserdashboardTraders = ({ route }) => {
                               })
                             setShowTrader(true)
                           }}>view profile</button>
-                          <button className='trader-card-btn' onClick={() => openCopyModal(trader)}>copy trade</button>
+                          <button className='trader-card-btn' onClick={() => openCopyModal(trader)}>mirror trade</button>
                         </div>
                       </div>
                     </div>

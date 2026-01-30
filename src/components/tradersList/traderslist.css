@@ -26,6 +26,7 @@
 
 .highlight-text {
     background: var(--gradient-text);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -160,7 +161,7 @@
     border-top: 1px solid var(--slate-800);
 }
 
-.copy-action-btn {
+.mirror-action-btn {
     flex: 1;
     padding: 12px;
     background: var(--gradient-accent);
@@ -173,7 +174,7 @@
     transition: all 0.2s;
 }
 
-.copy-action-btn:hover {
+.mirror-action-btn:hover {
     opacity: 0.9;
     box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
 }

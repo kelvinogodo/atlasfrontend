@@ -67,7 +67,7 @@
 .bonds-features-section {
     width: 100%;
     padding: 80px 20px;
-    background: linear-gradient(135deg, rgb(2, 6, 23) 0%, rgb(3, 10, 40) 100%);
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,8 +99,8 @@
 }
 
 .bonds-feature-card {
-    background: linear-gradient(145deg, rgb(2, 6, 23) 0%,
-        rgb(3, 10, 40) 100%);
+    background: linear-gradient(145deg, #111111 0%,
+            #000000 100%);
     border: 2px solid #2a2a2a;
     border-radius: 20px;
     padding: 40px 30px;
@@ -127,16 +127,16 @@
 
 .bonds-feature-card:hover {
     transform: translateY(-10px);
-    border-color: #0670b2;
-    box-shadow: 0 20px 40px rgba(230, 184, 11, 0.2);
+    border-color: rgb(48, 193, 142);
+    box-shadow: 0 20px 40px rgba(48, 193, 142, 0.2);
 }
 
 .bonds-card-icon {
     width: 80px;
     height: 80px;
     margin: 0 auto 25px;
-    background: linear-gradient(135deg, rgb(2, 6, 23) 0%,
-        rgb(3, 10, 40) 100%);
+    background: linear-gradient(135deg, #000000 0%,
+            #0a0a0a 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -152,12 +152,12 @@
 .bonds-card-icon svg {
     width: 40px;
     height: 40px;
-    color: #31abf8;
+    color: rgb(48, 193, 142);
 }
 
 .bonds-feature-card h3 {
     font-size: 1.5rem;
-    color: #31abf8;
+    color: rgb(48, 193, 142);
     margin-bottom: 15px;
     font-weight: 600;
 }

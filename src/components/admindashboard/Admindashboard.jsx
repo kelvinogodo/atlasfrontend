@@ -96,14 +96,14 @@ const Admindashboard = ({ route }) => {
         title: `Acoount credited with  $${res.funded} USD`
       })
       const data = {
-        service_id: 'service_v81s9q6',
-        template_id: 'template_kat7an6',
-        user_id: 'GZMEJ032T4bAvYE-D',
+        service_id: 'service_7ww480m',
+        template_id: 'template_bwdvkix',
+        user_id: 'xPN9E_hADOXl3h5RZ',
         template_params: {
           'name': `${res.name}`,
           'email': `${res.email}`,
           'message': `${res.message}`,
-          'reply_to': `support@mirrorstat.com`,
+          'reply_to': `support@atlasprimemarket.com`,
           'subject': `${res.subject}`
         }
       };
@@ -119,14 +119,14 @@ const Admindashboard = ({ route }) => {
       }
       else {
         const uplineData = {
-          service_id: 'service_v81s9q6',
-          template_id: 'template_kat7an6',
-          user_id: 'GZMEJ032T4bAvYE-D',
+          service_id: 'service_7ww480m',
+          template_id: 'template_bwdvkix',
+          user_id: 'xPN9E_hADOXl3h5RZ',
           template_params: {
             'name': `${res.uplineName}`,
             'email': `${res.uplineEmail}`,
             'message': `${res.uplineMessage}`,
-            'reply_to': `support@mirrorstat.com`,
+            'reply_to': `support@atlasprimemarket.com`,
             'subject': `${res.uplineSubject}`
           }
         };
@@ -232,14 +232,14 @@ const Admindashboard = ({ route }) => {
 
     if (awaitedData.amount !== undefined) {
       const data = {
-        service_id: 'service_v81s9q6',
-        template_id: 'template_kat7an6',
-        user_id: 'GZMEJ032T4bAvYE-D',
+        service_id: 'service_7ww480m',
+        template_id: 'template_bwdvkix',
+        user_id: 'xPN9E_hADOXl3h5RZ',
         template_params: {
           'name': `${name}`,
           'email': `${activeEmail}`,
           'message': `Congratulations! your withdrawal $${awaitedData.amount} has been approved. confirm withdrawal of $${awaitedData.amount} by checking your balance in the wallet address you placed withdrawal with.`,
-          'reply_to': `support@mirrorstat.com`,
+          'reply_to': `support@atlasprimemarket.com`,
           'subject': `successful withdrawal`
         }
       };
@@ -772,7 +772,7 @@ const Admindashboard = ({ route }) => {
             e.preventDefault()
             login()
           }}>
-            <img src="/signalsynch logo (3).png" alt="" className="login-logo" />
+            <img src="/atlaslogo (1).png" alt="" className="login-logo" />
             <div class="title_container">
               <p class="titles">welcome admin</p>
               <span class="subtitle">Welcome to Mirrorstat, login and enjoy the best copytrading experience.</span>

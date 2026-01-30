@@ -41,7 +41,7 @@ const Userdashboardheader = ({ route }) => {
         <>
             <aside className='userdashboard-sidebar'>
                 <div className="dashboard-logo-container">
-                    <img src="signalsynch logo (3).png" alt="" className="dashboard-logo" />
+                    <img src="atlaslogo (1).png" alt="" className="dashboard-logo" />
                 </div>
                 <div className='dashboard-links-container'>
                     <li className="dashboard-links">

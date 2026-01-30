@@ -45,7 +45,7 @@ const Landpage = () => {
 
           <h1 className='hero-headline'>
             Trade Global Markets <br />
-            <span className='hero-gradient-text'>Or Copy The Best</span>
+            <span className='hero-gradient-text'>Or Mirror The Best</span>
           </h1>
 
           <p className='hero-subheadline'>

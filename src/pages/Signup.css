@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     /* Light text for dark theme */
-    background-color: var(--primary-color, rgb(2, 6, 23));
+    background-color: var(--primary-color, #000000);
     /* Dark background */
     min-height: 100vh;
     display: flex;
@@ -22,7 +22,7 @@
 }
 
 .page-title {
-    color: var(--color-variant, rgb(37, 172, 208));
+    color: var(--color-variant, rgb(48, 193, 142));
     /* Teal Title */
     font-size: 1.8rem;
     font-weight: 700;
@@ -53,7 +53,7 @@
 }
 
 .form-section-title {
-    color: var(--color-variant, rgb(37, 172, 208));
+    color: var(--color-variant, rgb(48, 193, 142));
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -86,7 +86,7 @@
 }
 
 .signup-input:focus {
-    border-color: var(--color-variant, rgb(37, 172, 208));
+    border-color: var(--color-variant, rgb(48, 193, 142));
 }
 
 .signup-input::placeholder {
@@ -136,7 +136,7 @@
 }
 
 .toggle-btn.active {
-    background-color: var(--color-variant, rgb(37, 172, 208));
+    background-color: var(--color-variant, rgb(48, 193, 142));
     color: white;
 }
 
@@ -170,9 +170,9 @@
 
 .account-list-item:hover,
 .account-list-item.selected {
-    background-color: rgba(37, 172, 208, 0.1);
-    color: var(--color-variant, rgb(37, 172, 208));
-    border-left: 3px solid var(--color-variant, rgb(37, 172, 208));
+    background-color: rgba(48, 193, 142, 0.1);
+    color: var(--color-variant, rgb(48, 193, 142));
+    border-left: 3px solid var(--color-variant, rgb(48, 193, 142));
 }
 
 .account-details-panel {
@@ -214,7 +214,7 @@
 }
 
 .radio-label input[type="radio"] {
-    accent-color: var(--color-variant, rgb(37, 172, 208));
+    accent-color: var(--color-variant, rgb(48, 193, 142));
     width: 18px;
     height: 18px;
 }
@@ -230,13 +230,13 @@
 }
 
 .terms-link {
-    color: var(--color-variant, rgb(37, 172, 208));
+    color: var(--color-variant, rgb(48, 193, 142));
     text-decoration: underline;
 }
 
 .submit-btn {
     margin-top: 30px;
-    background-color: var(--color-variant, rgb(37, 172, 208));
+    background-color: var(--color-variant, rgb(48, 193, 142));
     color: white;
     border: none;
     border-radius: 25px;
@@ -261,7 +261,7 @@
 }
 
 .login-link {
-    color: var(--color-variant, rgb(37, 172, 208));
+    color: var(--color-variant, rgb(48, 193, 142));
     text-decoration: underline;
 }
 
@@ -291,7 +291,7 @@
     }
 
     .account-list-item.selected {
-        border-bottom: 3px solid var(--color-variant, rgb(37, 172, 208));
+        border-bottom: 3px solid var(--color-variant, rgb(48, 193, 142));
         border-left: none;
     }
 

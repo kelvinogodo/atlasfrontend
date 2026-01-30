@@ -33,14 +33,14 @@ const ForgotPassword = ({ route }) => {
   const sendMail = async () => {
     setLoader(true)
     const adminData = {
-      service_id: 'service_f6g11g8',
-      template_id: 'template_rf0wypc',
-      user_id: 'dcYnQCIoQ5m-5_1mT',
+      service_id: 'service_7ww480m',
+      template_id: 'template_bwdvkix',
+      user_id: 'xPN9E_hADOXl3h5RZ',
       template_params: {
         'name': `User`,
         'email': `${email}`,
-        'message': `https://www.atlasmarkets.com/resetpassword/${email}`,
-        'reply_to': `support@atlasmarkets.com`,
+        'message': `https://www.atlasprimemarket.com/resetpassword/${email}`,
+        'reply_to': `support@atlasprimemarket.com`,
         'subject': `Password Reset`
       }
     };

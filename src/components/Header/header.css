@@ -380,7 +380,7 @@ nav ul li a {
         top: 0;
         left: 0;
         z-index: 2;
-        background-color: rgb(2, 6, 23);
+        background-color: #000000;
     }
 
     .menu-card {
@@ -398,7 +398,7 @@ nav ul li a {
     }
 
     .menu-card .separator {
-        border-top: 1.5px solid rgb(3, 11, 42);
+        border-top: 1.5px solid #1a1a1a;
     }
 
     .menu-card .list {

@@ -24,18 +24,18 @@ const CopyModal = ({ trader, onClose, onConfirm, balance }) => {
     };
 
     return (
-        <div className="copy-modal-overlay">
-            <div className="copy-modal-container">
-                <div className="copy-modal-header">
-                    <h3>Copy {trader.firstname} {trader.lastname}</h3>
+        <div className="mirror-modal-overlay">
+            <div className="mirror-modal-container">
+                <div className="mirror-modal-header">
+                    <h3>Mirror {trader.firstname} {trader.lastname}</h3>
                     <span onClick={onClose}><IoMdClose /></span>
                 </div>
-                <div className="copy-modal-body">
-                    <p className="copy-modal-info">
-                        Allocate funds to copy trades from this trader.
+                <div className="mirror-modal-body">
+                    <p className="mirror-modal-info">
+                        Allocate funds to mirror trades from this trader.
                         Profits will be proportional to your allocation.
                     </p>
-                    <div className="copy-modal-balance">
+                    <div className="mirror-modal-balance">
                         <span>Available Balance:</span>
                         <span>${balance?.toLocaleString()}</span>
                     </div>
@@ -54,8 +54,8 @@ const CopyModal = ({ trader, onClose, onConfirm, balance }) => {
                     </div>
                     {error && <p className="error-message">{error}</p>}
 
-                    <button className="confirm-copy-btn" onClick={handleSubmit}>
-                        Confirm & Copy
+                    <button className="confirm-mirror-btn" onClick={handleSubmit}>
+                        Confirm & Mirror
                     </button>
                 </div>
             </div>

@@ -39,7 +39,7 @@ const Header = () => {
             transition={{ duration: 0.65 }}
         >
             <div className="logo-container">
-                <img src="/signalsynch logo (3).png" alt="" className='txtlogo' />
+                <img src="/atlaslogo (1).png" alt="" className='txtlogo' />
             </div>
             <nav>
                 <ul>
@@ -92,7 +92,7 @@ const Header = () => {
                 </div>
                 <div className="menu-card">
                     <div className="menu-card-image-conatiner">
-                        <img src="/signalsynch logo (3).png" alt="" className='mobile-logo' />
+                        <img src="/atlaslogo (1).png" alt="" className='mobile-logo' />
                     </div>
                     <ul className="list">
                         <li className="element"><Link to='/'>home</Link></li>

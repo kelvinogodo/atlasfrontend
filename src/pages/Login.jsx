@@ -102,7 +102,7 @@ const Login = ({ route }) => {
           e.preventDefault()
           login()
         }}>
-          <img src="/signalsynch logo (3).png" alt="" className="login-logo" onClick={() => {
+          <img src="/atlaslogo (1).png" alt="" className="login-logo" onClick={() => {
             navigate('/')
           }} />
           <div class="title_container">

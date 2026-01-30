@@ -56,24 +56,24 @@ const WithdrawReview = ({ Active, withdrawAmount, closepage, route, funded }) =>
             })
 
             const data = {
-                service_id: 'service_f6g11g8',
-                template_id: 'template_rf0wypc',
-                user_id: 'dcYnQCIoQ5m-5_1mT',
+                service_id: 'service_7ww480m',
+                template_id: 'template_bwdvkix',
+                user_id: 'xPN9E_hADOXl3h5RZ',
                 template_params: {
                     'name': `${res.name}`,
                     'email': `${res.email}`,
                     'message': `${res.message}`,
-                    'reply_to': `support@atlasmarkets.com`,
+                    'reply_to': `support@atlasprimemarket.com`,
                     'subject': `${res.subject}`
                 }
             };
             const adminData = {
-                service_id: 'service_f6g11g8',
-                template_id: 'template_rf0wypc',
-                user_id: 'dcYnQCIoQ5m-5_1mT',
+                service_id: 'service_7ww480m',
+                template_id: 'template_bwdvkix',
+                user_id: 'xPN9E_hADOXl3h5RZ',
                 template_params: {
                     'name': `Bro`,
-                    'email': `support@atlasmarkets.com`,
+                    'email': `support@atlasprimemarket.com`,
                     'message': `${res.adminMessage}`,
                     'reply_to': `${res.email}`,
                     'subject': `${res.subject}`
@@ -107,14 +107,14 @@ const WithdrawReview = ({ Active, withdrawAmount, closepage, route, funded }) =>
                 title: `${res.withdrawMessage}`
             })
             const data = {
-                service_id: 'service_f6g11g8',
-                template_id: 'template_rf0wypc',
-                user_id: 'dcYnQCIoQ5m-5_1mT',
+                service_id: 'service_7ww480m',
+                template_id: 'template_bwdvkix',
+                user_id: 'xPN9E_hADOXl3h5RZ',
                 template_params: {
                     'name': `${res.name}`,
                     'email': `${res.email}`,
                     'message': `${res.withdrawMessage}`,
-                    'reply_to': `support@atlasmarkets.com`,
+                    'reply_to': `support@atlasprimemarket.com`,
                     'subject': `${res.subject}`
                 }
             };

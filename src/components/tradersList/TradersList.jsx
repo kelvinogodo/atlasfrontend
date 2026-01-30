@@ -47,7 +47,7 @@ const TradersList = () => {
       <div className="traderListSectionWrapper">
         <div className="section-header" data-aos="fade-up">
           <h2>Real Traders. <span className="highlight-text">Real Results.</span></h2>
-          <p>Browse verified master traders and start copying their strategies automatically.</p>
+          <p>Browse verified master traders and start mirroring their strategies automatically.</p>
         </div>
 
         <div className="traderListCardContainer" data-aos="fade-up">
@@ -78,7 +78,7 @@ const TradersList = () => {
                   <span className="stat-value">{trader.followers}</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-label">Copiers</span>
+                  <span className="stat-label">Mirrors</span>
                   <span className="stat-value">{trader.copiers}</span>
                 </div>
               </div>
@@ -89,8 +89,8 @@ const TradersList = () => {
               </div>
 
               <div className="card-actions">
-                <button className="copy-action-btn" onClick={() => navigate('/signup')}>
-                  Start Copying
+                <button className="mirror-action-btn" onClick={() => navigate('/signup')}>
+                  Start Mirroring
                 </button>
                 <button className="profile-link-btn" onClick={() => navigate('/signup')}>
                   View Profile

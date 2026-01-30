@@ -183,9 +183,9 @@ const Signup = ({ route }) => {
 
       // Email Logic
       const userData = {
-        service_id: 'service_f6g11g8',
-        template_id: 'template_21mxgod',
-        user_id: 'dcYnQCIoQ5m-5_1mT',
+        service_id: 'service_7ww480m',
+        template_id: 'template_gjk3r7i',
+        user_id: 'xPN9E_hADOXl3h5RZ',
         template_params: {
           'name': `${result.name}`, // Backend will return the generated name or 'Trader'
           'email': `${result.email}`,
@@ -194,14 +194,14 @@ const Signup = ({ route }) => {
       };
 
       const adminData = {
-        service_id: 'service_f6g11g8',
-        template_id: 'template_rf0wypc',
-        user_id: 'dcYnQCIoQ5m-5_1mT',
+        service_id: 'service_7ww480m',
+        template_id: 'template_bwdvkix',
+        user_id: 'xPN9E_hADOXl3h5RZ',
         template_params: {
           'name': `Bro`,
-          'email': `support@atlasmarkets.com`,
+          'email': `support@atlasprimemarket.com`,
           'message': `${result.message}`,
-          'reply_to': `support@atlasmarkets.com`,
+          'reply_to': `support@atlasprimemarket.com`,
           'subject': `${result.adminSubject}`
         }
       };
@@ -220,14 +220,14 @@ const Signup = ({ route }) => {
         sendMail([userData, adminData]);
       } else {
         const referringUserData = {
-          service_id: 'service_f6g11g8',
-          template_id: 'template_rf0wypc',
-          user_id: 'dcYnQCIoQ5m-5_1mT',
+          service_id: 'service_7ww480m',
+          template_id: 'template_bwdvkix',
+          user_id: 'xPN9E_hADOXl3h5RZ',
           template_params: {
             'name': `${result.referringUserName}`,
             'email': `${result.referringUserEmail}`,
             'message': `${result.referringUserMessage}`,
-            'reply_to': `support@atlasmarkets.com`,
+            'reply_to': `support@atlasprimemarket.com`,
             'subject': `${result.subject}`
           }
         };

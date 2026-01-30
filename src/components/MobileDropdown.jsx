@@ -83,13 +83,13 @@ const MobileDropdown = ({ route, showStatus, closeMenu }) => {
                             navigate('/traders')
                         }}>
                             <AiOutlineStock />
-                            <p>Copy Traders</p>
+                            <p>Mirror Traders</p>
                         </div>
                         <div className="dropdown-tabs" onClick={() => {
                             navigate('/usercopytrade')
                         }}>
                             <FaRegChartBar />
-                            <p>Copy Trading</p>
+                            <p>Mirror Trading</p>
                         </div>
                         <div className="dropdown-tabs" onClick={() => {
                             navigate('/live-trading')

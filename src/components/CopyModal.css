@@ -1,4 +1,4 @@
-.copy-modal-overlay {
+.mirror-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,8 +11,9 @@
     z-index: 1000;
 }
 
-.copy-modal-container {
-    background: #1a1a1a; /* Dark theme matching app */
+.mirror-modal-container {
+    background: #1a1a1a;
+    /* Dark theme matching app */
     width: 90%;
     max-width: 400px;
     border-radius: 12px;
@@ -21,7 +22,7 @@
     border: 1px solid #333;
 }
 
-.copy-modal-header {
+.mirror-modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,24 +31,24 @@
     padding-bottom: 10px;
 }
 
-.copy-modal-header h3 {
+.mirror-modal-header h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: #ffd700; /* Gold */
+    color: rgb(48, 193, 142);
 }
 
-.copy-modal-header span {
+.mirror-modal-header span {
     cursor: pointer;
     font-size: 1.5rem;
 }
 
-.copy-modal-info {
+.mirror-modal-info {
     font-size: 0.9rem;
     color: #aaa;
     margin-bottom: 16px;
 }
 
-.copy-modal-balance {
+.mirror-modal-balance {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -79,11 +80,11 @@
     margin-bottom: 16px;
 }
 
-.confirm-copy-btn {
+.confirm-mirror-btn {
     width: 100%;
     padding: 14px;
-    background: #ffd700;
-    color: black;
+    background: rgb(48, 193, 142);
+    color: white;
     border: none;
     border-radius: 8px;
     font-weight: bold;
@@ -91,6 +92,6 @@
     transition: background 0.2s;
 }
 
-.confirm-copy-btn:hover {
-    background: #e6c200;
+.confirm-mirror-btn:hover {
+    background: rgb(38, 153, 112);
 }

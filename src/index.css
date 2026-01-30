@@ -189,7 +189,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   position: relative;
-  background-color: rgb(2, 6, 23);
+  background-color: #000000;
 }
 
 .home-price-chart {
@@ -208,21 +208,22 @@ body {
 }
 
 .highlight {
-  background: rgb(37, 172, 208);
-  background: linear-gradient(to right, rgb(25, 123, 150) 0%, rgb(37, 172, 208) 100%);
+  background: rgb(48, 193, 142);
+  background: linear-gradient(to right, rgb(40, 160, 120) 0%, rgb(48, 193, 142) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Poppins';
 }
 
 :root {
-  --primary-color: rgb(2, 6, 23);
-  --secondary-color: rgb(70, 123, 255);
-  --secondary-mild: rgb(1, 4, 16);
+  --primary-color: #000000;
+  --secondary-color: rgb(48, 193, 142);
+  --secondary-mild: #000000;
   --mild-color: #c7c7c7;
-  --dark-mild: rgb(43, 43, 43);
-  --color-variant: rgb(37, 172, 208);
-  --dark: rgb(31, 30, 88);
+  --dark-mild: #1a1a1a;
+  --color-variant: rgb(48, 193, 142);
+  --dark: #000000;
 
   /* Premium Design System */
   --slate-50: #F8FAFC;
@@ -237,21 +238,21 @@ body {
   --slate-900: #0F172A;
   --slate-950: #020617;
 
-  --blue-400: #60A5FA;
-  --blue-500: #3B82F6;
-  --blue-600: #2563EB;
+  --blue-400: rgb(48, 193, 142);
+  --blue-500: rgb(38, 153, 112);
+  --blue-600: rgb(28, 113, 82);
 
   --emerald-400: #34D399;
   --emerald-500: #10B981;
   --emerald-600: #059669;
 
-  --gradient-primary: linear-gradient(135deg, var(--slate-900) 0%, #1e1b4b 50%, var(--slate-900) 100%);
-  --gradient-accent: linear-gradient(to right, var(--blue-500), var(--emerald-500));
-  --gradient-text: linear-gradient(to right, #60A5FA, #34D399);
+  --gradient-primary: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  --gradient-accent: linear-gradient(to right, rgb(48, 193, 142), rgb(38, 153, 112));
+  --gradient-text: linear-gradient(to right, rgb(48, 193, 142), #ffffff);
 
   --font-hero: 'Inter', 'Poppins', sans-serif;
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(48, 193, 142, 0.1), 0 4px 6px -2px rgba(48, 193, 142, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(48, 193, 142, 0.1), 0 10px 10px -5px rgba(48, 193, 142, 0.04);
 }
 
 h1 {
@@ -320,8 +321,9 @@ button {
 .header h2 {
   font-weight: 400;
   text-transform: uppercase;
-  background: rgb(37, 172, 208);
-  background: linear-gradient(to right, rgb(25, 123, 150) 0%, rgb(37, 172, 208) 100%);
+  background: rgb(48, 193, 142);
+  background: linear-gradient(to right, rgb(40, 160, 120) 0%, rgb(48, 193, 142) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1rem;
@@ -331,8 +333,8 @@ button {
   width: 40px;
   margin-right: 10px;
   height: 2px;
-  background: linear-gradient(to right, rgb(25, 123, 150) 0%,
-      rgb(37, 172, 208) 100%);
+  background: linear-gradient(to right, rgb(40, 160, 120) 0%,
+      rgb(48, 193, 142) 100%);
 }
 
 .why-choose-us-text-container h1 {
@@ -361,7 +363,7 @@ button {
   font-size: 17px;
   padding: 0.2em 2.3em 0.2em 1.9em;
   color: var(--primary-color);
-  background: rgb(37, 172, 208);
+  background: rgb(48, 193, 142);
   border: none;
   letter-spacing: 0.05em;
   border-radius: 10px;
@@ -393,8 +395,8 @@ button {
 
 .signup-page {
   padding: 50px 0px;
-  background: rgb(2, 6, 23);
-  background: radial-gradient(circle farthest-corner at center center, rgb(37, 172, 208) 0%, rgb(2, 6, 23) 29%);
+  background: #000000;
+  background: radial-gradient(circle farthest-corner at center center, rgb(48, 193, 142) 0%, #000000 29%);
   background-size: cover;
   position: relative;
   display: flex;
@@ -572,7 +574,7 @@ button {
 }
 
 .eye-container:hover svg {
-  color: #1a73e8;
+  color: rgb(48, 193, 142);
 }
 
 .login-form-container {
@@ -619,9 +621,9 @@ button {
 }
 
 .sign-up-btn {
-  --primary-color: #1a73e8;
+  --primary-color: rgb(48, 193, 142);
   --secondary-color: #fff;
-  --hover-color: rgba(0, 27, 132, 0.826);
+  --hover-color: rgb(38, 153, 112);
   --arrow-width: 10px;
   --arrow-stroke: 2px;
   box-sizing: border-box;
@@ -686,7 +688,7 @@ button {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-color: rgb(240, 242, 246);
+  background-color: #000000;
 }
 
 .l {
