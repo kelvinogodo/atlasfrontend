@@ -29,7 +29,7 @@ const Header = () => {
         { name: "about", path: "/about", dropdown: [] },
         { name: "markets", path: "/markets", dropdown: ["forex", "commodities", "bonds", "options", "futures", "indices", "stocks"] },
         { name: "analytics", path: "/faq", dropdown: ["news", "technical-analysis", "heatmaps", "watchlists"] },
-        { name: "company", path: "/policy", dropdown: ["privacy-policy", "team"] },
+        { name: "company", path: "/policy", dropdown: ["privacy-policy"] },
     ];
 
     return (
@@ -131,7 +131,6 @@ const Header = () => {
                             </div>
                             <div className={`company-links ${showCompany && 'show-markets'}`}>
                                 <li className="element"><Link to='/privacy-policy'>privacy policy</Link></li>
-                                <li className="element"><Link to='/team'>team</Link></li>
                                 <li className="element"><Link to='/faq'>faq</Link></li>
                             </div>
                         </div>
