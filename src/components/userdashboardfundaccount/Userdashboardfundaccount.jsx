@@ -42,6 +42,14 @@ const Userdashboardfundaccount = ({ route }) => {
       min: 1,
       max: 1,
       image: '/trc.jpg',
+      method: 'USDT (TRC 20) ',
+      wallet: 'TA4m3EJcdZjpbCBaaRcdc9d9PoBpT4ZJ4Q'
+    },
+    {
+      id: 3,
+      min: 1,
+      max: 1,
+      image: '/trc.jpg',
       method: 'USDT (ERC 20) ',
       wallet: '0x002df7b08E5B41883C5c1c555f92c1faC89f8f16'
     },
@@ -68,14 +76,6 @@ const Userdashboardfundaccount = ({ route }) => {
       image: '/bep.png',
       method: 'BNB (erc 20)',
       wallet: '0x002df7b08E5B41883C5c1c555f92c1faC89f8f16'
-    },
-    {
-      id: 7,
-      min: 1,
-      max: 1,
-      image: '/xrp-icon.png',
-      method: 'XRP',
-      wallet: 'r4inCj5rQ91HRE4fU2M7A4MjcbaPQPeSSG'
     },
     {
       id: 8,
