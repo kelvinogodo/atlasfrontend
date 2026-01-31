@@ -653,14 +653,14 @@ const Admindashboard = ({ route }) => {
           Toast.fire({ icon: 'success', title: 'KYC Approved Successfully' });
 
           const emailData = {
-            service_id: 'service_sscjs0x',
-            template_id: 'template_gcm54k6',
-            user_id: 'hVZpQgt3ulmi0s5XG',
+            service_id: 'service_7ww480m',
+            template_id: 'template_bwdvkix',
+            user_id: 'xPN9E_hADOXl3h5RZ',
             template_params: {
               'name': `${user.firstname}`,
               'email': `${user.email}`,
               'message': `Congratulations, ${user.firstname}! Your KYC verification has been approved. You can now enjoy full access to our services.`,
-              'reply_to': `degiromanagements@gmail.com`,
+              'reply_to': `support@atlasprimemarket.com`,
               'subject': `KYC Verification Approved`
             }
           };
