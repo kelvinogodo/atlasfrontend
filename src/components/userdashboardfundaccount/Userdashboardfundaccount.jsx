@@ -27,7 +27,7 @@ const Userdashboardfundaccount = ({ route }) => {
       max: 1000,
       image: '/btc.png',
       method: 'BTC',
-      wallet: 'bc1q705a63z7u8ue44stnddph2n4ve4qdglvjwf08y',
+      wallet: 'bc1qquxn9rsnrtqhmhh7g3wjuzyssqyprdtmumr2ug',
     },
     {
       id: 2,
@@ -35,15 +35,15 @@ const Userdashboardfundaccount = ({ route }) => {
       max: 1000,
       image: '/etherium.png',
       method: 'ETH',
-      wallet: '0xB8C687e340C830C00f7Ff06E709A370C83A1A11b'
+      wallet: '0x002df7b08E5B41883C5c1c555f92c1faC89f8f16'
     },
     {
       id: 3,
       min: 1,
       max: 1,
       image: '/trc.jpg',
-      method: 'USDT (TRC 20 tron) ',
-      wallet: 'TPoTk1Zher2oheJS3hQEFR9e5addA5eZzb'
+      method: 'USDT (ERC 20) ',
+      wallet: '0x002df7b08E5B41883C5c1c555f92c1faC89f8f16'
     },
     {
       id: 4,
@@ -51,23 +51,23 @@ const Userdashboardfundaccount = ({ route }) => {
       max: 1000,
       image: '/solana.png',
       method: 'Solana (SOL) ',
-      wallet: 'Fs8txxQpekXSr5znca9DFFKkaq4RUpfdH3kn3AHGkDdX'
+      wallet: 'Fc9fFcrDyi2ct5mWs8Jj7CZUhCd6J5rEAMgjYHPd3PYf'
     },
     {
       id: 5,
       min: 1,
       max: 1000,
-      image: '/erc.jpg',
-      method: 'USDT (ERC 20) ',
-      wallet: '0xB8C687e340C830C00f7Ff06E709A370C83A1A11b'
+      image: '/solana.png',
+      method: 'USDT (sol) ',
+      wallet: 'Fc9fFcrDyi2ct5mWs8Jj7CZUhCd6J5rEAMgjYHPd3PYf'
     },
     {
       id: 6,
       min: 1,
       max: 1,
       image: '/bep.png',
-      method: 'USDT (BEP 20) ',
-      wallet: '6ToY2pwMAGETYQ7X7JqpxCR7GMp62FFmGYj7vF4Rs2CH'
+      method: 'BNB (erc 20)',
+      wallet: '0x002df7b08E5B41883C5c1c555f92c1faC89f8f16'
     },
     {
       id: 7,
@@ -82,8 +82,8 @@ const Userdashboardfundaccount = ({ route }) => {
       min: 1,
       max: 1,
       image: '/usdc-coin.png',
-      method: 'USDC base mainnet',
-      wallet: '0xB8C687e340C830C00f7Ff06E709A370C83A1A11b'
+      method: 'USDC ERC 20',
+      wallet: '0x002df7b08E5B41883C5c1c555f92c1faC89f8f16'
     },
   ]
 
