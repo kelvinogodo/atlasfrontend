@@ -20,9 +20,9 @@ const Home = () => {
       <TradersList />
       <CardContainer />
       <Why />
+      <Mt5Section />
       <CryptoNewsContainer />
       <Roadmap />
-      <Mt5Section />
       <TeslaWidgetContainer />
       <Review />
       <ForexAnalysisSection />
