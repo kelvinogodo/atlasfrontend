@@ -3,7 +3,7 @@
 .landpage {
   width: 100%;
   min-height: 100vh;
-  background: var(--slate-950);
+  background: #000000;
   position: relative;
   overflow: hidden;
   display: flex;

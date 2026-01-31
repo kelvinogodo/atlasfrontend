@@ -1,110 +1,46 @@
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
 import './traderslist.css'
-import { BsArrowRight, BsCheckCircleFill } from 'react-icons/bs'
-import { AiOutlineLineChart } from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 const TradersList = () => {
-  const navigate = useNavigate()
-
-  const traders = [
-    {
-      id: 1,
-      name: "Maximuz Cole",
-      image: "/jurica-koletic-7YVZYZeITc8-unsplash.jpg",
-      roi: "+223%",
-      winRate: "78%",
-      followers: "56",
-      copiers: "12",
-      risk: "Low",
-      verified: true
-    },
-    {
-      id: 2,
-      name: "Pete Duplexi",
-      image: "/fortune-vieyra-QIMjYJSFoXM-unsplash.jpg",
-      roi: "+356%",
-      winRate: "82%",
-      followers: "105",
-      copiers: "45",
-      risk: "Medium",
-      verified: true
-    },
-    {
-      id: 3,
-      name: "EA Trader Paul",
-      image: "/gregory-gill-4Bf5LNEPqZ0-unsplash.jpg",
-      roi: "+421%",
-      winRate: "65%",
-      followers: "2k+",
-      copiers: "847",
-      risk: "High",
-      verified: true
-    }
-  ]
-
   return (
-    <section className='TraderListSection'>
-      <div className="traderListSectionWrapper">
-        <div className="section-header" data-aos="fade-up">
-          <h2>Real Traders. <span className="highlight-text">Real Results.</span></h2>
-          <p>Browse verified master traders and start mirroring their strategies automatically.</p>
+    <section className='feature-stats-section'>
+      <div className="stats-container">
+
+        {/* Left Column: Visual & Stats */}
+        <div className="stats-visual-col">
+          {/* Background Chart Effect */}
+          <div className="chart-bg-overlay"></div>
+
+          <div className="stat-group">
+            <h3 className="stat-number">US$2.05 Trillion</h3>
+            <span className="stat-label">TRADING VOLUME - OCTOBER 2025</span>
+          </div>
+
+          <div className="stat-group">
+            <h3 className="stat-number">200,000+</h3>
+            <span className="stat-label">ACTIVE CLIENTS WORLDWIDE</span>
+          </div>
+
+          <div className="stat-group">
+            <h3 className="stat-number">Excellent 4.8/5</h3>
+            <span className="stat-label">RATING ON TRUSTPILOT</span>
+          </div>
         </div>
 
-        <div className="traderListCardContainer" data-aos="fade-up">
-          {traders.map((trader) => (
-            <div className="master-trader-card" key={trader.id}>
-              <div className="card-header">
-                <img src={trader.image} alt={trader.name} className="trader-avatar" />
-                <div className="trader-info">
-                  <div className="name-row">
-                    <h3>{trader.name}</h3>
-                    {trader.verified && <BsCheckCircleFill className="verified-badge" />}
-                  </div>
-                  <span className="trader-label">Professional Trader</span>
-                </div>
-              </div>
-
-              <div className="stats-grid">
-                <div className="stat-item">
-                  <span className="stat-label">12M ROI</span>
-                  <span className="stat-value positive">{trader.roi}</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-label">Win Rate</span>
-                  <span className="stat-value">{trader.winRate}</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-label">Followers</span>
-                  <span className="stat-value">{trader.followers}</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-label">Mirrors</span>
-                  <span className="stat-value">{trader.copiers}</span>
-                </div>
-              </div>
-
-              <div className="chart-preview">
-                {/* Placeholder for chart visual */}
-                <div className="dummy-chart-line"></div>
-              </div>
-
-              <div className="card-actions">
-                <button className="mirror-action-btn" onClick={() => navigate('/signup')}>
-                  Start Mirroring
-                </button>
-                <button className="profile-link-btn" onClick={() => navigate('/signup')}>
-                  View Profile
-                </button>
-              </div>
-            </div>
-          ))}
+        {/* Right Column: Text Content */}
+        <div className="feature-content-col">
+          <h2 className="feature-headline">
+            Give your automated trading system the edge
+          </h2>
+          <p className="feature-desc">
+            AtlasMarkets Global is the one of the top choices for automated traders.
+            Our order matching engine located in the New York Equinix NY4 data centre
+            processes over 3,600,000 trades per day with over two thirds of all trades
+            coming from automated trading systems.
+          </p>
         </div>
 
-        <div className="section-footer">
-          <button className="browse-all-btn" onClick={() => navigate('/signup')}>
-            See All Traders <BsArrowRight />
-          </button>
-        </div>
       </div>
     </section>
   )

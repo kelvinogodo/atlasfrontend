@@ -106,7 +106,7 @@ nav ul li a {
 }
 
 .signup-btn {
-    padding: 10px 25px;
+    padding: 5px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,6 +120,11 @@ nav ul li a {
     transition: all .5s ease-in-out;
     font-weight: 500;
     margin-top: 0px;
+}
+
+.client-login-btn:hover {
+    border-color: #00ff00;
+    color: #00ff00;
 }
 
 .logo-container {

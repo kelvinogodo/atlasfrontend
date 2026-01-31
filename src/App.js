@@ -45,6 +45,7 @@ import ForgotPassword from './components/forgotpassword/ForgotPassword';
 import Bonds from './pages/bonds/Bonds';
 import Options from './pages/options/Options';
 import Commodities from './pages/commodities/Commodities';
+import OtpVerification from './pages/OtpVerification';
 
 function App() {
   useEffect(() => {
@@ -126,6 +127,7 @@ function App() {
               <Route path='/bonds' element={<Bonds />} />
               <Route path='/options' element={<Options />} />
               <Route path='/commodities' element={<Commodities />} />
+              <Route path='/verify-otp' element={<OtpVerification route={route} />} />
             </Routes>
           </motion.div>
         </Router>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './landpage.css'
 import Header from '../Header/Header'
 import { useNavigate } from 'react-router-dom'
@@ -7,7 +7,6 @@ import Tickertape from '../Tickertape'
 import TrustBadge from '../TrustBadge'
 import { BsArrowRight, BsPlayCircle, BsShieldCheck } from 'react-icons/bs'
 import { AiFillStar } from 'react-icons/ai'
-import { useState, useEffect } from 'react'
 
 const Landpage = () => {
   const navigate = useNavigate()
@@ -98,8 +97,6 @@ const Landpage = () => {
               +124.5% <span>ROI</span>
             </div>
           </motion.div>
-
-
 
           <motion.div
             className="floating-card-glass card-3"

@@ -1,7 +1,8 @@
 .cardSection {
     width: 100%;
     padding: 100px 0;
-    background: var(--slate-900);
+    background: #ffffff;
+    /* White background for section */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,9 +30,6 @@
 }
 
 .cardSectionCard {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--slate-800);
-    backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 32px;
     display: flex;
@@ -41,31 +39,74 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(10px);
+    /* Optional if needed */
 }
 
-.cardSectionCard:hover {
-    transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.05);
-    border-color: var(--blue-500);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(59, 130, 246, 0.2);
+/* Dark Theme (Default/Base) */
+.cardSectionCard.theme-dark {
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.cardSectionCard.theme-dark h2 {
+    color: white;
+}
+
+.cardSectionCard.theme-dark p {
+    color: var(--slate-400);
+}
+
+/* Light Theme */
+.cardSectionCard.theme-light {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cardSectionCard.theme-light h2 {
+    color: #000000;
+}
+
+.cardSectionCard.theme-light p {
+    color: #4b5563;
+    /* Slate 600 */
+}
+
+.cardSectionCard.theme-light:hover {
+    background: #f8fafc;
+    /* Slate 50 */
+    border-color: #00ff00;
+    /* Neon Green Border on hover */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 255, 0, 0.1);
+}
+
+.cardSectionCard.theme-dark:hover {
+    background: #000000;
+    border-color: #00ff00;
+    /* Neon Green Border on hover */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 0, 0.2);
+}
+
+
+/* Common SVG Styles Override */
 .cardSectionCardSvg {
     width: 60px;
     height: 60px;
     border-radius: 12px;
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(0, 255, 0, 0.1);
+    /* Green tint */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.75rem;
-    color: var(--blue-400);
+    color: #00ff00;
+    /* Neon Green Icon */
     transition: 0.3s;
 }
 
 .cardSectionCard:hover .cardSectionCardSvg {
-    background: var(--blue-500);
-    color: white;
+    background: #00ff00;
+    color: black;
 }
 
 .cardSectionCardSvgText {
@@ -79,7 +120,6 @@
 .cardSectionCardSvgText h2 {
     font-size: 1.25rem;
     font-weight: 700;
-    color: white;
     margin: 0;
     font-family: var(--font-hero);
 }
@@ -87,15 +127,14 @@
 .distorted-line {
     width: 40px;
     height: 3px;
-    background: var(--gradient-accent);
+    background: linear-gradient(90deg, #00ff00, #00cc00);
+    /* Green gradient */
     border-radius: 2px;
     margin: 0 auto;
-    align-self: center ;
-    /* Force centering in flex column */
+    align-self: center;
 }
 
 .cardSectionCardSvgText p {
-    color: var(--slate-400);
     font-size: 0.95rem;
     line-height: 1.6;
     margin: 0;
