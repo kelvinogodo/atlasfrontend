@@ -55,8 +55,8 @@ const CardContainer = () => {
               AtlasMarkets Global is one of the largest Forex CFD providers in the world by trading volume.
             </p>
             <div className="strength-actions">
-              <button className="btn-primary-green">Start Trading</button>
-              <button className="btn-secondary-outline">Try a Free Demo</button>
+              <button className="btn-primary-green" onClick={() => navigate('/signup')}>Start Trading</button>
+              <button className="btn-secondary-outline" onClick={() => navigate('/signup')}>Try a Free Demo</button>
             </div>
           </div>
           <div className="strength-stats-col">

@@ -55,7 +55,7 @@ const Landpage = () => {
         </motion.div>
       </div>
 
-      
+
       {/* Stats Bar */}
       <div className="stats-bar-section">
         <div className="stat-item">
@@ -193,7 +193,7 @@ const Landpage = () => {
             </p>
             <div className="raw-actions">
               <button className="btn-primary-green" onClick={() => navigate('/signup')}>Start Trading</button>
-              <button className="btn-secondary-outline" onClick={() => navigate('/demo')}>Try a Free Demo</button>
+              <button className="btn-secondary-outline" onClick={() => navigate('/signup')}>Try a Free Demo</button>
             </div>
           </div>
         </div>
