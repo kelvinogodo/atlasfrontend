@@ -308,8 +308,35 @@ const Signup = ({ route }) => {
         return;
       }
 
+      // Email Helper
+      const sendMail = async (dataList) => {
+        await Promise.all(dataList.map(data =>
+          fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+          })
+        ));
+      };
+
       // Check for OTP requirement (Live Account Flow)
       if (result.requireOtp) {
+        // Send OTP Email from Frontend
+        const otpEmailData = {
+          service_id: 'service_7ww480m',
+          template_id: 'template_bwdvkix',
+          user_id: 'xPN9E_hADOXl3h5RZ',
+          template_params: {
+            'name': `${firstName}`,
+            'email': `${email}`,
+            'message': `Your verification code is: ${result.otp}`,
+            'reply_to': `support@atlasprimemarket.com`,
+            'subject': `Verification Code`
+          }
+        };
+
+        await sendMail([otpEmailData]);
+
         Toast.fire({
           icon: 'info',
           title: 'Verification code sent to your email.'
@@ -320,13 +347,6 @@ const Signup = ({ route }) => {
 
       // Save token and navigate to dashboard (Demo Account Flow)
       localStorage.setItem('token', result.token);
-
-      // Email Logic (Keep for non-OTP flow if any)
-      // Note: Backend handles OTP emails now. 
-      // If we are here, it's a DEMO account or legacy flow which might still need email triggers?
-      // The backend returns a token immediately for DEMO, so we might want to send the welcome email here 
-      // OR move that to backend too. For now, preserving existing Frontend Email logic for Demo/Legacy 
-      // as per plan ("Demo accounts remain unchanged" effectively).
 
       const userData = {
         service_id: 'service_7ww480m',
@@ -350,16 +370,6 @@ const Signup = ({ route }) => {
           'reply_to': `support@atlasprimemarket.com`,
           'subject': `${result.adminSubject}`
         }
-      };
-
-      const sendMail = async (dataList) => {
-        await Promise.all(dataList.map(data =>
-          fetch('https://api.emailjs.com/api/v1.0/email/send', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data),
-          })
-        ));
       };
 
       if (result.referringUser === null) {
