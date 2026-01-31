@@ -75,7 +75,7 @@ const OtpVerification = ({ route }) => {
                     // For now, using generic or 'Trader'.
                     'email': email,
                     // 'verificationLink': '...' // Not needed for welcome? Or maybe dashboard link.
-                    'message': 'Welcome to Atlas Markets!'
+                    
                 }
             };
 
