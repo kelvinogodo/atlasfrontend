@@ -481,13 +481,47 @@
 
 /* Mobile Responsiveness for Account List */
 @media (max-width: 768px) {
+    .signup-content {
+        padding: 40px 5%;
+    }
+
+    .signup-form {
+        padding: 30px 15px;
+    }
+
+    /* Force single column for all grids */
+    .form-grid,
+    .form-grid.kyc-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .input-group.full-width {
+        grid-column: span 1;
+    }
+
+    .stepper-container {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .stepper-line {
+        left: 20px;
+        right: 20px;
+    }
+
+    .step-label {
+        font-size: 0.65rem;
+    }
+
+    /* Account List Styles */
     .account-list {
         flex-direction: column;
     }
 
     .account-list-sidebar {
-        flex-direction: row;
-        overflow-x: auto; /* Allow horizontal scroll if many items */
+        flex-direction: column;
+        overflow-x: visible;
         min-width: 100%;
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -496,23 +530,41 @@
     .account-list-item {
         flex: 1;
         text-align: center;
-        white-space: nowrap;
-        border-bottom: none;
-        border-left: none; /* Remove left border for mobile items */
+        white-space: normal;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-left: none;
         padding: 12px 10px;
         font-size: 0.9rem;
     }
-    
+
+    .account-list-item:last-child {
+        border-bottom: none;
+    }
+
     .account-list-item.selected {
         border-left: none;
-        border-bottom: 3px solid rgb(48, 193, 142);
+        border-bottom: none;
+        background: rgba(48, 193, 142, 0.1);
+        color: rgb(48, 193, 142);
     }
 
     .account-details-panel {
         padding: 20px;
     }
-    
+
     .radio-group {
         flex-wrap: wrap;
+    }
+
+    .account-toggle {
+        flex-direction: column;
+    }
+
+    .form-navigation {
+        flex-direction: column;
+    }
+
+    .upload-section {
+        grid-template-columns: 1fr;
     }
 }
