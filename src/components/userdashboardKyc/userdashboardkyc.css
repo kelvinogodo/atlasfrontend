@@ -44,13 +44,13 @@
 }
 
 .status-not-submitted {
-    background: linear-gradient(135deg, #1e96b8 0%, #25acd0 100%);
-    border-left: 5px solid #25acd0;
+    background: linear-gradient(135deg, rgb(38, 153, 112) 0%, rgb(48, 193, 142) 100%);
+    border-left: 5px solid rgb(48, 193, 142);
 }
 
 .status-processing {
-    background: linear-gradient(135deg, #1e96b8 0%, #38bdf8 100%);
-    border-left: 5px solid #38bdf8;
+    background: linear-gradient(135deg, rgb(38, 153, 112) 0%, rgb(48, 193, 142) 100%);
+    border-left: 5px solid rgb(48, 193, 142);
 }
 
 .status-approved {
@@ -82,7 +82,7 @@
     color: white;
     font-size: 2rem;
     margin-bottom: 10px;
-    background: linear-gradient(135deg, #1e96b8 0%, #25acd0 100%);
+    background: linear-gradient(135deg, rgb(38, 153, 112) 0%, rgb(48, 193, 142) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -125,10 +125,10 @@
 }
 
 .progress-step.active .step-number {
-    background: linear-gradient(135deg, #1e96b8 0%, #25acd0 100%);
+    background: linear-gradient(135deg, rgb(38, 153, 112) 0%, rgb(48, 193, 142) 100%);
     color: white;
     transform: scale(1.1);
-    box-shadow: 0 5px 20px rgba(37, 172, 208, 0.4);
+    box-shadow: 0 5px 20px rgba(48, 193, 142, 0.4);
 }
 
 .progress-step.completed .step-number {
@@ -155,7 +155,7 @@
 }
 
 .progress-line.completed {
-    background: linear-gradient(90deg, #1e96b8 0%, #25acd0 100%);
+    background: linear-gradient(90deg, rgb(38, 153, 112) 0%, rgb(48, 193, 142) 100%);
 }
 
 /* Form Steps */
@@ -220,8 +220,8 @@
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #25acd0;
-    box-shadow: 0 0 0 3px rgba(37, 172, 208, 0.1);
+    border-color: rgb(48, 193, 142);
+    box-shadow: 0 0 0 3px rgba(48, 193, 142, 0.1);
 }
 
 .form-group input:disabled {
@@ -260,7 +260,7 @@
 }
 
 .upload-item:hover {
-    border-color: #25acd0;
+    border-color: rgb(48, 193, 142);
     transform: translateY(-2px);
 }
 
@@ -283,7 +283,7 @@
 }
 
 .upload-item input[type="file"]::file-selector-button {
-    background: linear-gradient(135deg, #1e96b8 0%, #25acd0 100%);
+    background: linear-gradient(135deg, rgb(38, 153, 112) 0%, rgb(48, 193, 142) 100%);
     color: white;
     border: none;
     padding: 8px 16px;
@@ -298,7 +298,7 @@
 }
 
 .upload-success {
-    color: #25acd0;
+    color: rgb(48, 193, 142);
     font-weight: 600;
     margin-top: 8px;
     display: flex;
@@ -339,15 +339,15 @@
 
 .btn-primary,
 .btn-submit {
-    background: linear-gradient(135deg, #1e96b8 0%, #25acd0 100%);
+    background: linear-gradient(135deg, rgb(38, 153, 112) 0%, rgb(48, 193, 142) 100%);
     color: white;
-    box-shadow: 0 5px 15px rgba(37, 172, 208, 0.3);
+    box-shadow: 0 5px 15px rgba(48, 193, 142, 0.3);
 }
 
 .btn-primary:hover,
 .btn-submit:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(37, 172, 208, 0.4);
+    box-shadow: 0 8px 25px rgba(48, 193, 142, 0.4);
 }
 
 .btn-secondary {
