@@ -7,39 +7,39 @@ const TradeInfo = () => {
   return (
     <section className='tradeInfo-section'>
       <div className="tradeInfo-wrapper">
-        <div class="forex-card" data-aos="fade-up">
-          <div class="img">
-            <GrDocumentPerformance /> 
+        <div className="forex-card" data-aos="fade-up">
+          <div className="img">
+            <GrDocumentPerformance />
           </div>
-          <div class="textBox">
-            <div class="textContent">
-              <p class="h1">Short-Term Contracts</p>
+          <div className="textBox">
+            <div className="textContent">
+              <p className="h1">Short-Term Contracts</p>
             </div>
-            <p class="p">Trading intra-day, daily or weekly provides unique opportunities.</p>
-          <div>
-        </div></div></div>
-        <div class="forex-card" data-aos="fade-up">
-          <div class="img">
+            <p className="p">Trading intra-day, daily or weekly provides unique opportunities.</p>
+            <div>
+            </div></div></div>
+        <div className="forex-card" data-aos="fade-up">
+          <div className="img">
             <TbClockStar />
           </div>
-          <div class="textBox">
-            <div class="textContent">
-              <p class="h1">Trading Around the Clock</p>
+          <div className="textBox">
+            <div className="textContent">
+              <p className="h1">Trading Around the Clock</p>
             </div>
-            <p class="p">24 hours a day, Monday-Saturday only, using mt4 and mt5.</p>
-          <div>
-        </div></div></div>
-        <div class="forex-card" data-aos="fade-up">
-          <div class="img">
+            <p className="p">24 hours a day, Monday-Saturday only, using mt4 and mt5.</p>
+            <div>
+            </div></div></div>
+        <div className="forex-card" data-aos="fade-up">
+          <div className="img">
             <IoCalendarNumberOutline />
           </div>
-          <div class="textBox">
-            <div class="textContent">
-              <p class="h1">Active Markets</p>
+          <div className="textBox">
+            <div className="textContent">
+              <p className="h1">Active Markets</p>
             </div>
-            <p class="p">23 hours a day, Monday-Saturday using mt4 and mt5.</p>
-          <div>
-        </div></div></div>
+            <p className="p">23 hours a day, Monday-Saturday using mt4 and mt5.</p>
+            <div>
+            </div></div></div>
       </div>
     </section>
   )

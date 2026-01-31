@@ -1,12 +1,13 @@
-.tradeInfo-section{
+.tradeInfo-section {
     width: 100%;
     padding: 40px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: #000000;
 }
-.tradeInfo-wrapper{
+
+.tradeInfo-wrapper {
     width: 85%;
     display: flex;
     align-items: center;
@@ -15,7 +16,7 @@
 
 .forex-card {
     width: 34%;
-    background: var(--primary-color);
+    background: #000000;
     border: 1px solid hsl(0, 0%, 18%);
     display: flex;
     align-items: center;
@@ -37,19 +38,21 @@
     margin: 10px;
     border-radius: 10px;
 }
-.forex-card .img svg{
+
+.forex-card .img svg {
     font-size: 3rem;
     color: var(--color-variant);
 }
-.forex-card:hover >.img {
+
+.forex-card:hover>.img {
     transition: 0.5s ease-in-out;
-    
+
 }
 
 .forex-card .textBox {
     width: calc(100% - 90px);
     margin-left: 10px;
-    color: var(--dark);
+    color: white;
     font-family: 'Poppins' sans-serif;
 }
 
@@ -75,22 +78,22 @@
     text-align: left;
     color: rgb(164, 164, 164);
 }
- @media (max-width: 990px) and (min-width: 768px) {
-     
- }
 
- @media screen and (max-width: 767px) {
+@media (max-width: 990px) and (min-width: 768px) {}
+
+@media screen and (max-width: 767px) {
     .tradeInfo-wrapper {
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        }
+    }
+
     .forex-card {
         width: 90%;
-        margin-top:20px ;
+        margin-top: 20px;
         align-self: center;
     }
 
- }
+}

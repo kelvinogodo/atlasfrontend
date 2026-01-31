@@ -1,7 +1,7 @@
 .about-section {
     width: 100%;
     padding: 120px 0;
-    background: var(--slate-900);
+    background: #000000;
     position: relative;
     overflow: hidden;
 }
@@ -62,6 +62,7 @@
     font-size: 1.5rem;
     font-weight: 800;
     background: var(--gradient-text);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

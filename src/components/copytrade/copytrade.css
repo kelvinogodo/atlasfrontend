@@ -1,7 +1,7 @@
 .copy-trade-section {
     width: 100%;
     padding: 120px 0;
-    background: var(--slate-950);
+    background: #000000;
     position: relative;
     overflow: hidden;
 }
