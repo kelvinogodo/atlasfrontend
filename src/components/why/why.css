@@ -1,8 +1,9 @@
 .comparison-section {
-    padding: 100px 0;
-    background: var(--slate-900);
+    padding: 10px 0 100px;
+    background: #ffffff;
     width: 100%;
-    color: white;
+    color: #1e293b;
+    /* Dark Slate */
 }
 
 .comparison-container {
@@ -21,27 +22,38 @@
 .comparison-header h2 {
     font-size: 2.5rem;
     margin-bottom: 16px;
+    color: #0f172a;
+    /* Slate 900 */
+    font-weight: 800;
 }
 
 .comparison-header p {
-    color: var(--slate-400);
+    color: #64748b;
+    /* Slate 500 */
+    font-size: 1.1rem;
+}
+
+.highlight-text {
+    color: #22c55e;
+    /* Green matching brand */
 }
 
 .comparison-table-wrapper {
     overflow-x: auto;
-    background: var(--slate-800);
-    border-radius: 16px;
-    border: 1px solid var(--slate-700);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    padding: 8px;
-    /* Inner padding for border radius effect */
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+    /* Softer shadow */
+    padding: 24px;
 }
 
 .comparison-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    min-width: 600px;
+    min-width: 700px;
+    /* Force scroll on small screens */
 }
 
 .comparison-table th {
@@ -49,33 +61,38 @@
     text-align: left;
     font-size: 1.125rem;
     font-weight: 700;
-    border-bottom: 1px solid var(--slate-700);
+    border-bottom: 1px solid #e2e8f0;
+    color: #0f172a;
 }
 
 .brand-header {
-    background: rgba(59, 130, 246, 0.1);
-    color: var(--blue-400);
+    background: rgba(34, 197, 94, 0.1);
+    /* Light green tint */
+    color: #16a34a;
+    /* Green text */
     position: relative;
-    border-radius: 8px 8px 0 0;
+    border-radius: 12px 12px 0 0;
 }
 
 .brand-badge {
     position: absolute;
     top: -12px;
     right: 20px;
-    background: var(--blue-500);
+    background: #22c55e;
     color: white;
-    font-size: 0.7rem;
-    padding: 4px 8px;
+    font-size: 0.75rem;
+    padding: 6px 12px;
     border-radius: 20px;
     text-transform: uppercase;
     font-weight: 800;
+    box-shadow: 0 4px 6px -1px rgba(34, 197, 94, 0.3);
 }
 
 .comparison-table td {
     padding: 24px;
-    border-bottom: 1px solid var(--slate-700);
+    border-bottom: 1px solid #e2e8f0;
     font-size: 1rem;
+    vertical-align: middle;
 }
 
 .comparison-table tr:last-child td {
@@ -84,31 +101,51 @@
 
 .feature-cell {
     font-weight: 600;
-    color: var(--slate-200);
+    color: #334155;
+    /* Slate 700 */
 }
 
 .positive-cell {
-    color: var(--emerald-400);
+    color: #22c55e;
     font-size: 1.25rem;
 }
 
 .negative-cell {
-    color: var(--slate-600);
+    color: #ef4444;
+    /* Red 500 */
     font-size: 1.25rem;
 }
 
 .neutral-cell {
-    color: var(--slate-400);
+    color: #94a3b8;
+    /* Slate 400 */
+    font-weight: 500;
 }
 
 .highlight-cell {
     font-weight: 700;
-    color: var(--emerald-400);
+    color: #16a34a;
+    /* Darker green */
 }
 
 /* Hover Effect */
 .comparison-table tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: #f8fafc;
+    /* Very light slate */
+}
+
+/* Rounded corners for the brand column */
+.comparison-table th.brand-header {
+    border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.comparison-table td:nth-child(3) {
+    background: rgba(34, 197, 94, 0.02);
+    /* Very subtle green tint for column */
+}
+
+.comparison-table tbody tr:last-child td:nth-child(3) {
+    border-radius: 0 0 12px 12px;
 }
 
 @media (max-width: 768px) {
@@ -120,17 +157,28 @@
         font-size: 2rem;
     }
 
-    /* Make table scrollable horizonally */
     .comparison-table-wrapper {
+        padding: 12px;
         margin: 0 -20px;
+        /* Bleed to edges */
         width: calc(100% + 40px);
         border-radius: 0;
-        border-left: none;
         border-right: none;
+        border-left: none;
+        box-shadow: none;
     }
 
     .comparison-table th,
     .comparison-table td {
         padding: 16px;
+        font-size: 0.95rem;
+        white-space: nowrap;
+        /* Prevent wrapping to keep alignment */
+    }
+
+    .brand-badge {
+        right: 10px;
+        font-size: 0.65rem;
+        padding: 4px 8px;
     }
 }

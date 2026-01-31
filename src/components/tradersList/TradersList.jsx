@@ -5,42 +5,83 @@ import { motion } from 'framer-motion'
 const TradersList = () => {
   return (
     <section className='feature-stats-section'>
-      <div className="stats-container">
-
-        {/* Left Column: Visual & Stats */}
-        <div className="stats-visual-col">
-          {/* Background Chart Effect */}
-          <div className="chart-bg-overlay"></div>
-
-          <div className="stat-group">
-            <h3 className="stat-number">US$2.05 Trillion</h3>
-            <span className="stat-label">TRADING VOLUME - OCTOBER 2025</span>
+      {/* Spreads Promo Section (White Card) */}
+      <div className="spreads-promo-container">
+        <div className="spreads-card">
+          <div className="spreads-text-col">
+            <h2 className="spreads-headline">Spreads from 0.0 pips</h2>
+            <ul className="spreads-list">
+              <li>
+                <span className="check-icon">✓</span>
+                Raw spreads means really from 0.0 pips*
+              </li>
+              <li>
+                <span className="check-icon">✓</span>
+                Our diverse and proprietary liquidity mix keeps spreads tight 24/5
+              </li>
+            </ul>
+            <button className="btn-pricing">Pricing Overview</button>
           </div>
 
-          <div className="stat-group">
-            <h3 className="stat-number">200,000+</h3>
-            <span className="stat-label">ACTIVE CLIENTS WORLDWIDE</span>
-          </div>
-
-          <div className="stat-group">
-            <h3 className="stat-number">Excellent 4.8/5</h3>
-            <span className="stat-label">RATING ON TRUSTPILOT</span>
+          <div className="spreads-visual-col">
+            {/* CSS Phone Mockup */}
+            <div className="phone-mockup">
+              <div className="phone-screen">
+                {/* Simplified Trading Header */}
+                <div className="app-header">
+                  <span className="menu-icon">☰</span>
+                  <span>AtlasMarkets</span>
+                  <div className="app-icons">
+                    <span>⚡</span><span>🔔</span>
+                  </div>
+                </div>
+                {/* Simplified Market List */}
+                <div className="market-row">
+                  <div className="m-symbol">EURUSD</div>
+                  <div className="m-prices">
+                    <span className="m-bid">1.12009</span>
+                    <span className="m-ask">1.12009</span>
+                  </div>
+                </div>
+                <div className="market-row">
+                  <div className="m-symbol">GBPUSD</div>
+                  <div className="m-prices">
+                    <span className="m-bid">1.35002</span>
+                    <span className="m-ask">1.35005</span>
+                  </div>
+                </div>
+                <div className="market-row active-row">
+                  <div className="m-symbol">XAUUSD</div>
+                  <div className="m-prices">
+                    <span className="m-bid">1729.78</span>
+                    <span className="m-ask">1730.97</span>
+                  </div>
+                </div>
+              </div>
+              {/* Floating Widget Overlay */}
+              <div className="floating-spread-widget">
+                <div className="f-header">
+                  <span className="f-symbol">EURUSD</span>
+                  <span className="f-change">▲ +0.15%</span>
+                </div>
+                <div className="f-body">
+                  <div className="f-col">
+                    <span className="f-label">Bid</span>
+                    <span className="f-val">1.12009</span>
+                  </div>
+                  <div className="f-col">
+                    <span className="f-label">Ask</span>
+                    <span className="f-val">1.12009</span>
+                  </div>
+                  <div className="f-col right">
+                    <span className="f-label">Spread</span>
+                    <span className="f-val bold">0.0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Right Column: Text Content */}
-        <div className="feature-content-col">
-          <h2 className="feature-headline">
-            Give your automated trading system the edge
-          </h2>
-          <p className="feature-desc">
-            AtlasMarkets Global is the one of the top choices for automated traders.
-            Our order matching engine located in the New York Equinix NY4 data centre
-            processes over 3,600,000 trades per day with over two thirds of all trades
-            coming from automated trading systems.
-          </p>
-        </div>
-
       </div>
     </section>
   )

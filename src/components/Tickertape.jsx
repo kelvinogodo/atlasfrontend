@@ -6,7 +6,7 @@ const Tickertape = () => {
 
   useEffect(() => {
     if (scriptRef.current) return; // Prevent multiple script insertions
-    
+
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
@@ -29,7 +29,7 @@ const Tickertape = () => {
       colorTheme: "dark",
       locale: "en"
     });
-    
+
     if (containerRef.current) {
       containerRef.current.appendChild(script);
       scriptRef.current = script;
@@ -37,7 +37,7 @@ const Tickertape = () => {
   }, []);
 
   return (
-    <div className="tradingview-widget-containers" ref={containerRef}>
+    <div className="tradingview-widget-containers" ref={containerRef} style={{ backgroundColor: "#000000" }}>
       <div className="tradingview-widget-container__widget"></div>
       <div className="tradingview-widget-copyright">
       </div>

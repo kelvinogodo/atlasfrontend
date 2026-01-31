@@ -1,7 +1,7 @@
 import React from 'react'
 import './contact.css'
 import { FiMail } from 'react-icons/fi'
-import { BsWhatsapp } from 'react-icons/bs'
+import { BsWhatsapp, BsYoutube, BsInstagram, BsTwitter } from 'react-icons/bs'
 
 const Contact = () => {
     return (
@@ -20,6 +20,18 @@ const Contact = () => {
                 <div className="contact-actions">
                     <a href='mailto:support@atlasmarkets.com' className="contact-btn">
                         <FiMail /> Email Support
+                    </a>
+                </div>
+
+                <div className="social-links">
+                    <a href="https://youtube.com/@tradesbysci?si=PFa6x3vId3zg1ZV9" target="_blank" rel="noreferrer" className="social-icon youtube">
+                        <BsYoutube />
+                    </a>
+                    <a href="https://x.com/tradesbysci" target="_blank" rel="noreferrer" className="social-icon twitter">
+                        <BsTwitter />
+                    </a>
+                    <a href="https://www.instagram.com/atlasprimemarkets?igsh=NDBseW4xbmZsbWVh" target="_blank" rel="noreferrer" className="social-icon instagram">
+                        <BsInstagram />
                     </a>
                 </div>
             </div>

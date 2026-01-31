@@ -1,5 +1,7 @@
 import React from 'react'
 import './cardcontainer.css'
+import { AiFillStar } from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom'
 import { TbChartDots2 } from 'react-icons/tb'
 import { TfiPieChart } from 'react-icons/tfi'
 import { BsBarChartLine } from 'react-icons/bs'
@@ -41,25 +43,75 @@ const cardsData = [
 ];
 
 const CardContainer = () => {
+  const navigate = useNavigate()
   return (
-    <section className='cardSection'>
-      <div className="cardSectionWrapper" data-aos="fade-up">
-        {cardsData.map((card, index) => {
-          return (
-            <div className="cardSectionCard theme-dark" key={index} data-aos="fade-up">
-              <span className="cardSectionCardSvg">
-                {card.icon}
-              </span>
-              <div className="cardSectionCardSvgText">
-                <h2>{card.title}</h2>
-                <span className="distorted-line"></span>
-                <p>{card.desc}</p>
-              </div>
+    <>
+      {/* Strength in Numbers Section */}
+      <section className="strength-section">
+        <div className="strength-container">
+          <div className="strength-content-col">
+            <h2 className="strength-headline">Our strength is in the<br />numbers</h2>
+            <p className="strength-desc">
+              AtlasMarkets Global is one of the largest Forex CFD providers in the world by trading volume.
+            </p>
+            <div className="strength-actions">
+              <button className="btn-primary-green">Start Trading</button>
+              <button className="btn-secondary-outline">Try a Free Demo</button>
             </div>
-          )
-        })}
+          </div>
+          <div className="strength-stats-col">
+            <div className="strength-stat">
+              <span className="s-val">3,600,000</span>
+              <span className="s-sub">TRADES PER DAY</span>
+            </div>
+            <div className="strength-stat">
+              <span className="s-val">Equinix NY4</span>
+              <span className="s-sub">TRADING HUB AT NEW YORK</span>
+            </div>
+            <div className="strength-stat">
+              <span className="s-val">60%</span>
+              <span className="s-sub">ALGO TRADES (% OF ALL TRADES)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trustpilot Strip - Moved from Landpage */}
+      <div className="trustpilot-strip">
+        <div className="trustpilot-left">
+          <span className="excellent-text">Excellent</span>
+          <div className="trustpilot-stars">
+            <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
+          </div>
+          <span className="trustpilot-brand"><span className="tp-star">★</span> Trustpilot</span>
+        </div>
+        <div className="trustpilot-right">
+          <button className="btn-strip-green" onClick={() => navigate('/signup')}>Open an Account</button>
+          <button className="btn-strip-white" onClick={() => navigate('/contact')}>
+            <span className="chat-icon">💬</span> 24/7 Support
+          </button>
+        </div>
       </div>
-    </section>
+
+      <section className='cardSection'>
+        <div className="cardSectionWrapper" data-aos="fade-up">
+          {cardsData.map((card, index) => {
+            return (
+              <div className="cardSectionCard theme-dark" key={index} data-aos="fade-up">
+                <span className="cardSectionCardSvg">
+                  {card.icon}
+                </span>
+                <div className="cardSectionCardSvgText">
+                  <h2>{card.title}</h2>
+                  <span className="distorted-line"></span>
+                  <p>{card.desc}</p>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+    </>
   )
 }
 

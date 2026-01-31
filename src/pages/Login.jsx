@@ -107,7 +107,7 @@ const Login = ({ route }) => {
           }} />
           <div class="title_container">
             <p class="titles">Login to your Account</p>
-            <span class="subtitle">Welcome to AtlasMarkets, login and enjoy the best copytrading experience.</span>
+            <span class="subtitle">Welcome to AtlasMarkets, login and enjoy the best mirror trading experience.</span>
           </div>
           <br />
           <div class="input_containers">

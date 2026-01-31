@@ -1,6 +1,6 @@
 .cardSection {
     width: 100%;
-    padding: 100px 0;
+    padding: 40px 0 100px;
     background: #ffffff;
     /* White background for section */
     display: flex;
@@ -140,9 +140,233 @@
     margin: 0;
 }
 
+/* Strength Section */
+.strength-section {
+    width: 100%;
+    background: #000000;
+    color: white;
+    padding: 40px 0 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.strength-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.strength-content-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.strength-headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: white;
+}
+
+.strength-desc {
+    font-size: 1.1rem;
+    color: var(--slate-400);
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.strength-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.strength-stats-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    /* Optional divider */
+    padding-left: 60px;
+}
+
+.strength-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.s-val {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.s-sub {
+    font-size: 0.8rem;
+    color: #00ff00;
+    /* Neon Green */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .strength-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .strength-content-col {
+        align-items: center;
+    }
+
+    .strength-actions {
+        justify-content: center;
+    }
+
+    .strength-stats-col {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 40px;
+        width: 100%;
+    }
+
     .cardSection {
         padding: 60px 0;
+    }
+}
+
+/* Trustpilot Strip - Moved from Landpage */
+.trustpilot-strip {
+    width: 100%;
+    background: white;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    border-top: 1px solid #e2e8f0;
+}
+
+.trustpilot-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #000000;
+}
+
+.excellent-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.trustpilot-stars {
+    display: flex;
+    gap: 4px;
+    color: #00b67a;
+    font-size: 1.5rem;
+    background: #00b67a;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.trustpilot-stars svg {
+    color: white;
+}
+
+.trustpilot-brand {
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tp-star {
+    color: #00b67a;
+}
+
+.trustpilot-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.btn-strip-green {
+    padding: 10px 24px;
+    background: #22c55e;
+    color: #000000;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-strip-green:hover {
+    background: #16a34a;
+}
+
+.btn-strip-white {
+    padding: 10px 24px;
+    background: white;
+    color: #000000;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-strip-white:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+}
+
+.chat-icon {
+    font-size: 1.1rem;
+}
+
+/* Mobile Responsiveness for Trustpilot in CardContainer */
+@media (max-width: 900px) {
+    .trustpilot-strip {
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .trustpilot-left {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .trustpilot-right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-strip-green,
+    .btn-strip-white {
+        width: 100%;
+        justify-content: center;
     }
 }

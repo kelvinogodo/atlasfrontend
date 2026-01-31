@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer-brand">
                     <h2>Atlas<span className="highlight-text">Markets</span></h2>
                     <p className="footer-text">
-                        The advanced broker and copytrading platform connecting you with professional traders worldwide.
+                        The advanced broker and mirror trading platform connecting you with professional traders worldwide.
                         Trade with precision or automate your growth with confidence.
                     </p>
                 </div>

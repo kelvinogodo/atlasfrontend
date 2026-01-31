@@ -1,5 +1,5 @@
 .footer {
-  background: var(--slate-900);
+  background: #000000;
   border-top: 1px solid var(--slate-800);
   padding: 80px 0 30px;
   width: 100%;
@@ -13,6 +13,10 @@
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 40px;
   padding-bottom: 60px;
+}
+
+.footer-brand {
+  text-align: left;
 }
 
 .footer-brand h2 {

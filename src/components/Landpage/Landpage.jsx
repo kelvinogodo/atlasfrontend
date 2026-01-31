@@ -37,83 +37,165 @@ const Landpage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="hero-pill-badge">
-            <span className="live-dot"></span>
-            {copiers.toLocaleString()} Active Copiers Online
-          </div>
-
           <h1 className='hero-headline'>
-            Trade Global Markets <br />
-            <span className='hero-gradient-text'>Or Mirror The Best</span>
+            Experience Raw Spread Trading with a<br />
+            <span className='hero-highlight-text'>Regulated Forex & CFD Broker</span>
           </h1>
 
           <p className='hero-subheadline'>
-            AtlasMarkets is your all-in-one trading powerhouse. Trade stocks, crypto, and forex with raw spreads,
-            or automatically mirror the strategies of verified masters throughout the world.
+            Trade Indices, Shares, Commodities, and Crypto with<br />
+            lightning-fast execution and deep liquidity across global markets.
           </p>
 
           <div className='hero-actions'>
-            <button className='btn-primary-glow' onClick={() => navigate('/signup')}>
-              Start Trading Now
-              <div className="btn-glow-effect"></div>
+            <button className='btn-primary-green' onClick={() => navigate('/signup')}>
+              Start Trading
             </button>
-            <button className='btn-secondary-outline' onClick={() => navigate('/login')}>
-              <BsPlayCircle className="icon-mr" /> Viewing Demo
-            </button>
-          </div>
-
-          <div className='hero-trust-row'>
-            <div className="trust-item">
-              <AiFillStar className="star-gold" />
-              <span>4.9/5 Rating</span>
-            </div>
-            <div className="divider-dot"></div>
-            <div className="trust-item">
-              <BsShieldCheck className="shield-green" />
-              <span>SEC Regulated</span>
-            </div>
-            <div className="divider-dot"></div>
-            <div className="trust-item">
-              <span>$150M+ Copied Volume</span>
-            </div>
           </div>
         </motion.div>
+      </div>
 
-        {/* Abstract Visual Elements (CSS Art instead of Image) */}
-        <div className="hero-abstract-visuals">
-          <motion.div
-            className="floating-card-glass card-1"
-            animate={{ y: [0, -20, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <div className="card-header-mini">
-              <img src="/24.jpg" alt="Trader" className="mini-avatar" />
-              <div>
-                <span className="mini-name">Alex M.</span>
-                <span className="mini-role">Forex Master</span>
+      
+      {/* Stats Bar */}
+      <div className="stats-bar-section">
+        <div className="stat-item">
+          <span className="stat-value">0.0</span>
+          <span className="stat-label">Pip Spreads*</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">1:1000</span>
+          <span className="stat-label">Leverage</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">0.01</span>
+          <span className="stat-label">Micro Lot Trading</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">+2250</span>
+          <span className="stat-label">Tradable Instruments</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">24/7</span>
+          <span className="stat-label">Dedicated Support</span>
+        </div>
+      </div>
+
+      {/* Raw Spread Advantage Section */}
+      <div className="raw-spread-section">
+        <div className="raw-spread-container">
+          {/* Left: Visual Widget Mockups */}
+          <div className="raw-visuals-col">
+            <div className="trading-widget-grid">
+              <div className="widget-card">
+                <div className="widget-header">
+                  <span className="symbol">EURUSD</span>
+                  <span className="change negative">📉 -0.97%</span>
+                </div>
+                <div className="price-row">
+                  <div className="price-box">
+                    <span className="label">Bid</span>
+                    <span className="price">1.18<span className="big">52</span><sup>6</sup></span>
+                  </div>
+                  <div className="price-box">
+                    <span className="label">Ask</span>
+                    <span className="price">1.18<span className="big">53</span><sup>4</sup></span>
+                  </div>
+                </div>
+                <div className="spread-row">
+                  <span className="spread-tag">Spread 0.8</span>
+                  <div className="widget-actions">
+                    <button className="btn-buy">Buy</button>
+                    <button className="btn-sell">Sell</button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="widget-card">
+                <div className="widget-header">
+                  <span className="symbol">AUDUSD</span>
+                  <span className="change positive">📈 +1.25%</span>
+                </div>
+                <div className="price-row">
+                  <div className="price-box">
+                    <span className="label">Bid</span>
+                    <span className="price">0.69<span className="big">58</span><sup>9</sup></span>
+                  </div>
+                  <div className="price-box">
+                    <span className="label">Ask</span>
+                    <span className="price">0.69<span className="big">69</span><sup>5</sup></span>
+                  </div>
+                </div>
+                <div className="spread-row">
+                  <span className="spread-tag">Spread 0.6</span>
+                  <div className="widget-actions">
+                    <button className="btn-buy">Buy</button>
+                    <button className="btn-sell">Sell</button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="widget-card">
+                <div className="widget-header">
+                  <span className="symbol">GBPUSD</span>
+                  <span className="change negative">📉 -0.85%</span>
+                </div>
+                <div className="price-row">
+                  <div className="price-box">
+                    <span className="label">Bid</span>
+                    <span className="price">1.36<span className="big">84</span><sup>1</sup></span>
+                  </div>
+                  <div className="price-box">
+                    <span className="label">Ask</span>
+                    <span className="price">1.36<span className="big">87</span><sup>0</sup></span>
+                  </div>
+                </div>
+                <div className="spread-row">
+                  <span className="spread-tag">Spread 0.9</span>
+                  <div className="widget-actions">
+                    <button className="btn-buy">Buy</button>
+                    <button className="btn-sell">Sell</button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="widget-card">
+                <div className="widget-header">
+                  <span className="symbol">XAUUSD</span>
+                  <span className="change positive">📈 +9.29%</span>
+                </div>
+                <div className="price-row">
+                  <div className="price-box">
+                    <span className="label">Bid</span>
+                    <span className="price">4885.<span className="big">18</span></span>
+                  </div>
+                  <div className="price-box">
+                    <span className="label">Ask</span>
+                    <span className="price">4885.<span className="big">58</span></span>
+                  </div>
+                </div>
+                <div className="spread-row">
+                  <span className="spread-tag">Spread 4.0</span>
+                  <div className="widget-actions">
+                    <button className="btn-buy">Buy</button>
+                    <button className="btn-sell">Sell</button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="card-stat-positive">
-              +124.5% <span>ROI</span>
-            </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="floating-card-glass card-3"
-            animate={{ y: [0, -15, 0] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-          >
-            <div className="card-header-mini">
-              <img src="/67.jpg" alt="Trader" className="mini-avatar" />
-              <div>
-                <span className="mini-name">David K.</span>
-                <span className="mini-role">Stock Pro</span>
-              </div>
+          {/* Right: Content */}
+          <div className="raw-content-col">
+            <h2 className="section-headline">The Raw Spread<br />Advantage</h2>
+            <p className="section-desc">
+              Raw Spreads are the difference you have been waiting for. Trade with spreads from 0.0 pips, no requotes, best possible prices and no restrictions.
+              AtlasMarkets is the multi-asset trading platform of choice for high volume traders, scalpers and robots.
+            </p>
+            <div className="raw-actions">
+              <button className="btn-primary-green" onClick={() => navigate('/signup')}>Start Trading</button>
+              <button className="btn-secondary-outline" onClick={() => navigate('/demo')}>Try a Free Demo</button>
             </div>
-            <div className="card-stat-positive">
-              +89% <span>Win Rate</span>
-            </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 

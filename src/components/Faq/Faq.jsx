@@ -8,12 +8,12 @@ const Faq = () => {
             id: 1,
             active: true,
             question: 'What is AtlasMarkets?',
-            answer: "AtlasMarkets is a professional copytrading platform that allows users to mirror real-time trades from seasoned, expert traders. It gives you access to global financial markets—like forex, stocks, indices, and crypto—using proven strategies such as scalping, swing trading, and trend following. It's a smart way to grow your portfolio without having to trade manually."
+            answer: "AtlasMarkets is a professional mirror trading platform that allows users to mirror real-time trades from seasoned, expert traders. It gives you access to global financial markets—like forex, stocks, indices, and crypto—using proven strategies such as scalping, swing trading, and trend following. It's a smart way to grow your portfolio without having to trade manually."
         },
         {
             id: 2,
             active: false,
-            question: 'Where does the copytrading activity go into?',
+            question: 'Where does the mirror trading activity go into?',
             answer: "All trading activity on AtlasMarkets is executed by experienced traders in high-liquidity markets such as forex, cryptocurrencies, stock CFDs, and major indices. These markets are carefully selected for their volatility, trading volume, and potential for consistent profits. Our traders utilize advanced technical and fundamental analysis to generate steady returns."
         },
         {

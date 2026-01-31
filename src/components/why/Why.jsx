@@ -25,7 +25,7 @@ const Why = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td className="feature-cell">Copy Trading</td>
+                                <td className="feature-cell">Mirror Trading</td>
                                 <td className="negative-cell"><BsXCircleFill /></td>
                                 <td className="positive-cell"><BsCheckCircleFill /></td>
                             </tr>

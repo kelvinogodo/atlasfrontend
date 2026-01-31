@@ -1,7 +1,7 @@
 .review-section {
     width: 100%;
-    padding: 100px 0;
-    background: var(--slate-950);
+    padding: 40px 0 100px;
+    background: #000000;
 }
 
 .review-grid {

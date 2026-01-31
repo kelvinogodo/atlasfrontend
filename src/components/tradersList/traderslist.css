@@ -5,19 +5,23 @@
     background: #000000;
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* Changed to column to stack containers */
+    align-items: center;
     overflow: hidden;
+    padding-bottom: 80px;
+    /* Space at bottom */
 }
 
 .stats-container {
     display: flex;
     width: 100%;
     max-width: 100%;
-    /* Full width as per image style, usually spread */
     height: auto;
     min-height: 600px;
 }
 
+/* ... existing stats visual col & feature content styles ... */
 /* LEFT COLUMN - Visual/Stats */
 .stats-visual-col {
     flex: 1;
@@ -97,7 +101,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 80px 100px;
+    padding: 40px 100px;
     /* Large padding for breathing room */
 }
 
@@ -118,6 +122,225 @@
     max-width: 600px;
 }
 
+
+/* SPREADS PROMO SECTION */
+.spreads-promo-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: -50px;
+    /* Slight overlap or pull up if desired, or mostly margin top */
+    margin: 40px auto 0;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.spreads-card {
+    background: #f8fafc;
+    /* Very light gray/white */
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Text Column */
+.spreads-text-col {
+    flex: 1;
+    z-index: 2;
+    color: #0f172a;
+    /* Dark slate text */
+}
+
+.spreads-headline {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.spreads-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.spreads-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.check-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: #22c55e;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.btn-pricing {
+    background: #e2e8f0;
+    color: #0f172a;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-pricing:hover {
+    background: #cbd5e1;
+}
+
+/* Visual Column */
+.spreads-visual-col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Phone Mockup */
+.phone-mockup {
+    width: 280px;
+    height: 500px;
+    background: #000000;
+    border-radius: 36px;
+    /* Phone corners */
+    border: 8px solid #334155;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 10px;
+}
+
+.market-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #1e293b;
+    color: white;
+}
+
+.market-row.active-row {
+    background: rgba(34, 197, 94, 0.1);
+    margin: 0 -16px;
+    padding: 12px 16px;
+}
+
+.m-symbol {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.m-prices {
+    display: flex;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.m-bid {
+    color: #ef4444;
+}
+
+.m-ask {
+    color: #22c55e;
+}
+
+
+/* Floating Widget */
+.floating-spread-widget {
+    position: absolute;
+    bottom: 60px;
+    left: -40px;
+    /* Overlap left */
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 220px;
+    z-index: 10;
+    border: 1px solid #e2e8f0;
+}
+
+.f-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.f-change {
+    color: #22c55e;
+}
+
+.f-body {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.f-val {
+    font-size: 0.9rem;
+    color: #334155;
+}
+
+.f-val.bold {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+
 /* Responsive */
 @media (max-width: 1024px) {
     .stats-container {
@@ -137,5 +360,28 @@
     .feature-headline {
         font-size: 2.5rem;
         max-width: 100%;
+    }
+
+    .spreads-card {
+        flex-direction: column;
+        padding: 40px 24px;
+        text-align: center;
+    }
+
+    .spreads-list li {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .phone-mockup {
+        width: 100%;
+        /* Resize phone for mobile */
+        max-width: 280px;
+    }
+
+    .floating-spread-widget {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
     }
 }

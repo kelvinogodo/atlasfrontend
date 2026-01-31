@@ -17,7 +17,7 @@ const Mt5Section = () => {
             </h1>
             <p>
               Execute trades on the award-winning MT5 platform with institutional-grade liquidity.
-              Whether you self-trade or copy-trade, experience sub-millisecond execution and zero interruptions.
+              Whether you self-trade or mirror-trade, experience sub-millisecond execution and zero interruptions.
             </p>
             <div className="feature-list">
               <div className="feature-item">

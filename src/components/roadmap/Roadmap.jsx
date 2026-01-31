@@ -16,9 +16,9 @@ const Roadmap = () => {
 
             <div className="roadmapCardText">
               <h2>register</h2>
-              <p>Open a live account and start copytrading in just minutes.</p>
+              <p>Open a live account and start mirror trading in just minutes.</p>
             </div>
-            
+
           </div>
 
           <div className="roadmapSvgContainer" data-aos="fade-up">
@@ -34,7 +34,7 @@ const Roadmap = () => {
               <h2>fund</h2>
               <p>Fund your account using a wide range of funding methods.</p>
             </div>
-            
+
           </div>
 
           <div className="roadmapSvgContainer" data-aos="fade-up">
@@ -50,7 +50,7 @@ const Roadmap = () => {
               <h2>trade</h2>
               <p>Access 1000+ pro traders across all asset classes</p>
             </div>
-            
+
           </div>
         </div>
       </div>
