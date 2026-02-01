@@ -13,7 +13,7 @@ const About = () => {
       <div className='about-container'>
         <div className="about-image-wrapper" data-aos="fade-right">
           <div className="image-backdrop"></div>
-          <img src="/signalsynchmockup13.png" alt="AtlasMarkets Platform" className="about-mockup" />
+          <img src="/atlasmockup4.png" alt="AtlasMarkets Platform" className="about-mockup" />
           <div className="experience-badge">
             <span className="years">Premium</span>
             <span className="label">Trading Ecosystem</span>

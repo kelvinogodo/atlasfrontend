@@ -10,6 +10,7 @@ import CardContainer from '../components/cardcontainer/CardContainer'
 import TeslaWidgetContainer from '../components/Teslawidget/TeslaWidgetContainer'
 import CryptoNewsContainer from '../components/CryptoNewsSection/CryptoNewsContainer'
 import ForexAnalysisSection from '../components/ForexAnalysisSection/ForexAnalysisSection'
+import PromoSection from '../components/PromoSection/PromoSection'
 import Mt5Section from '../components/mt5/Mt5Section'
 import Roadmap from '../components/roadmap/Roadmap'
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
       <TeslaWidgetContainer />
       <Review />
       <ForexAnalysisSection />
+      <PromoSection />
       <Faq />
       <Contact />
       <Footer />
