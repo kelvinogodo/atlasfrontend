@@ -140,7 +140,7 @@ const Userdashboardhomepage = ({ route }) => {
                 Total Balance
               </h2>
               <div className="amount">
-                <h3>${userData ? userData.funded : '0'}.00</h3>
+                <h3>${userData ? (userData.funded + (userData.subscriptions?.reduce((acc, sub) => acc + (sub.currentEquity || 0), 0) || 0)).toFixed(2) : '0.00'}</h3>
                 <span className="usd-btn">usd</span>
               </div>
             </div>
