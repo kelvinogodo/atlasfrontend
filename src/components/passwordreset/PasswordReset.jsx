@@ -10,11 +10,11 @@ import Swal from 'sweetalert2'
 
 const PasswordReset = ({ route }) => {
   const params = useParams()
-  const [email, setEmail] = useState(params.email)
-  const [newPassword, setNewPassword] = useState()
-  const [confirmPassword, setConfirmPassword] = useState()
-  const [showPassword, setShowPassword] = useState()
-  const [showConfirmPassword, setShowConfirmPassword] = useState()
+  const [email, setEmail] = useState(params.email?.toLowerCase() || '')
+  const [newPassword, setNewPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const [loader, setLoader] = useState(false)
 
 

@@ -286,7 +286,7 @@ const Signup = ({ route }) => {
           userName: null, // Let backend generate it
 
           password: password,
-          email: email,
+          email: email.toLowerCase(),
           referralLink: referringUser,
           server: accountCategory === 'LIVE' ? selectedServer : selectedAccountType,
           accountCategory: accountCategory,
