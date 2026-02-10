@@ -1511,8 +1511,16 @@ const Admindashboard = ({ route }) => {
                                   setShowTraderLogForm(true)
                                   setActiveTraderId(trader._id)
 
+                                  console.log('[DEBUG] Clicked Update Log for Trader:', trader._id);
+                                  console.log('[DEBUG] Current Users State:', users);
+
                                   if (users) {
-                                    const tradersUsers = users.filter(user => user.trader === trader._id);
+                                    const tradersUsers = users.filter(user => {
+                                      const match = user.trader === trader._id;
+                                      // console.log(`[DEBUG] User ${user.email} trader field: ${user.trader}, Match: ${match}`);
+                                      return match;
+                                    });
+                                    console.log('[DEBUG] Filtered Copy Traders:', tradersUsers);
                                     setCopyTraders(tradersUsers);
 
                                     const initialAllocations = {};
