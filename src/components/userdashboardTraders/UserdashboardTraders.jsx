@@ -176,7 +176,7 @@ const UserdashboardTraders = ({ route }) => {
         'x-access-token': localStorage.getItem('token')
       },
       body: JSON.stringify({
-        trader: trader._id
+        traderId: trader._id
       }),
     })
     const res = await req.json()
