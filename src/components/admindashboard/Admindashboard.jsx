@@ -182,14 +182,14 @@ const Admindashboard = ({ route }) => {
         title: `Acoount debited with  $${res.funded} USD`
       })
       const data = {
-        service_id: 'service_n41coy6',
-        template_id: 'template_pngqtzi',
-        user_id: '_1vUT8k_p8wQRyQ9L',
+        service_id: 'service_7ww480m',
+        template_id: 'template_bwdvkix',
+        user_id: 'xPN9E_hADOXl3h5RZ',
         template_params: {
           'name': `${res.name}`,
           'email': `${res.email}`,
           'message': `${res.message}`,
-          'reply_to': `Info.vaultmirror@gmail.com`,
+          'reply_to': `support@atlasprimemarket.com`,
           'subject': `${res.subject}`
         }
       };
@@ -775,7 +775,7 @@ const Admindashboard = ({ route }) => {
             <img src="/atlaslogo (1).png" alt="" className="login-logo" />
             <div class="title_container">
               <p class="titles">welcome admin</p>
-              <span class="subtitle">Welcome to Mirrorstat, login and enjoy the best copytrading experience.</span>
+              <span class="subtitle">Welcome to Atlasmarket, login and enjoy the best copytrading experience.</span>
             </div>
             <br />
             <div class="input_containers">
